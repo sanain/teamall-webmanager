@@ -1,0 +1,47 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+
+.fitment{padding: 20px;background: #E3E4E6}
+.nav-ul{overflow: hidden;height: 40px;line-height: 40px;background: #ffffff;padding-left: 33px;margin-bottom: 20px;}
+.nav-ul li{float: left;padding-right: 4%}
+.nav-ul li a{display: inline-block;color: #666666;height: 40px}
+.nav-ul li a.active{color: #69AC72;border-bottom: 2px solid #69AC72}
+
+.fit-box{padding: 30px 0;background: #ffffff;}
+.fit-left{width: 50%;float: left}
+.fit-right{width: 50%;float: left;margin-bottom: 50px}
+
+
+
+
+.fit-left ul{overflow: hidden}
+.fit-left ul input[type=text]{border: 1px solid #DCDCDC;border-radius: 3px;padding: 0 10px;height: 30px;line-height: normal;width: 170px;outline: none}
+.fit-left ul select{border: 1px solid #DCDCDC;border-radius: 3px;padding: 0 10px;height: 30px;line-height: normal;width: 170px;outline: none}
+.fit-left ul li{float: left}
+.fit-left ul li:nth-child(1){width: 100px;text-align: right;line-height: 30px}
+.fit-left ul:nth-child(2) p{color: #666666;font-size: 12px;margin-bottom: 0;}
+.fit-left ul:nth-child(3){line-height: 30px}
+.fit-left ul:last-child a{display: inline-block;height: 30px;line-height:30px;width: 80px;color: #666;border: 1px solid #DCDCDC;text-align: center;margin-right: 15px}
+.fit-left ul:last-child span{font-size: 12px;color: #666666;}
+
+.add-list{float: left;width: 80%;margin-bottom: 2%;border: 1px solid #DCDCDC;margin-right: 2%;cursor: pointer}
+.add-list>p{margin-left: 10%;margin-bottom: 0;line-height: 30px;font-size: 16px}
+.img-k{width: 80%;margin: 0 auto;padding: 10px 0}
+.img-k img{width: 100%}
+.fit-img{width: 100px;height: 100px;overflow: hidden}
+.fit-img img{width: 100%}
+.file{position: relative}
+ul input[type=file]{width: 10px;outline: none;display: inline-block}
+.file label{position: absolute;background: #ffffff;height: 30px;width: 80px;border: 1px solid #DCDCDC;text-align: center;font-weight: normal;line-height: 30px;top: 0;left: 0;}
+.file span{margin:0 0 10px 80px;display: inline-block;color: #666666;font-size: 12px}
+
+.fit-btn{text-align: center;margin-top: 50px;clear: both}
+.fit-btn a{display: inline-block;height: 30px;line-height: 30px;background: #69AC72;color: #ffffff;border-radius: 5px;width: 90px;}
+
+.radio-div{display: inline-block}
+.radio-div label{font-weight: normal}

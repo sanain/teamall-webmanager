@@ -1,0 +1,58 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #555555;}
+
+.c-context{padding: 10px;background: #E3E4E6;}
+.context-box{background: #ffffff;overflow: hidden;color: #555555;}
+.nav-ul{overflow: hidden;height: 40px;line-height: 40px;background: #ffffff;padding-left: 33px;margin-bottom: 20px;}
+.nav-ul li{float: left;padding-right: 4%}
+.nav-ul li a{display: inline-block;color: #666666;height: 40px}
+.nav-ul li a.active{color: #69AC72;border-bottom: 2px solid #69AC72}
+.nav-ul li img{margin-left: 10px;cursor: pointer}
+
+.context-box ul{overflow: hidden;padding: 30px 30px 0;}
+.context-box ul li{float: left;width: 50%;border: 1px solid #CCCCCC;;height: 30px;line-height: 30px;padding-left: 15px;border-top: none}
+.context-box ul li:nth-child(even){border-left: none}
+.context-box ul li:nth-child(1){border-top: 1px solid #CCCCCC}
+.context-box ul li:nth-child(2){border-top: 1px solid #CCCCCC}
+.context-box ul li b{font-weight: normal}
+.context-box ul li span{display: inline-block;width: 27%}
+.context-box ul li a{color: #69AC72;margin-left: 10px}
+
+.msg-btn{text-align: center;clear: both;padding-top: 30px;padding-bottom: 30px}
+.msg-btn a{display: inline-block;height: 30px;line-height: 30px;background: #69AC72;color: #ffffff;padding: 0 15px}
+.msg-btn a:nth-child(1){margin-right: 10px}
+.msg-btn a:nth-child(2){margin-left: 10px}
+.msg-btn a:nth-child(3){margin-left: 10px}
+
+/*余额明细*/
+.balance{background: #ffffff;overflow: hidden;color: #555555}
+.select-div{margin: 30px 20px 20px;height: 30px;line-height: 30px}
+.select-div input{height: 30px;border-radius: 4px;outline: none;width: 120px;border: 1px solid #CCCCCC;padding: 0 10px}
+.select-div select{height: 30px;border-radius: 4px;outline: none;width: 120px;border: 1px solid #CCCCCC}
+.select-div b{font-weight: normal;}
+.select-div span{margin-left: 15px}
+.select-div a{display: inline-block;height: 30px;line-height: 30px;padding: 0 15px;color: #ffffff;background: #69AC72;border-radius: 4px;margin-left: 10px}
+
+.balance-list{margin: 0 20px 30px;border: 1px solid #CCCCCC}
+.balance-list ul{overflow: hidden;margin-bottom: 0;border-bottom: 1px solid #CCCCCC}
+.balance-list ul.list-bottom{border-bottom: none}
+.balance-list ul li{height: 30px;line-height: 30px;text-align: center;float: left;width: 20%;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: break-word;}
+.balance-list .list-body ul:nth-child(odd){background: #FDFDFD}
+.balance-list .list-body ul:nth-child(even){background: #F9F9F9}
+
+.sb{background: #ffffff;overflow: hidden;color: #555555}
+
+.bank{background: #ffffff;overflow: hidden;color: #555555}
+.bank-list{margin: 30px 20px 30px;border: 1px solid #CCCCCC;}
+.bank-list ul{overflow: hidden;margin-bottom: 0;border-bottom: 1px solid #CCCCCC;}
+.bank-list .list-body ul:last-child{border-bottom: none}
+.bank-list ul li{height: 30px;line-height: 30px;text-align: center;float: left;width:16.66%;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: break-word;}
+.bank-list ul li a{color: #69AC72}
+.bank-list .list-body ul:nth-child(odd){background: #FDFDFD}
+.bank-list .list-body ul:nth-child(even){background: #F9F9F9}
+
+

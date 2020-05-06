@@ -1,0 +1,33 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+
+.logo-div{padding: 30px 60px}
+.login{position: relative;height: 600px;background: url("../images/login-bg2.jpg") no-repeat center}
+.login-div{padding-top:4%;margin-right:20%}
+.login-list{width: 370px;height: 320px;border: 1px solid #eee;background: #ffffff;border-radius: 3px;float: right;box-shadow: 0 0 7px rgba(0,0,0,0.1);}
+.login-list>p{height: 50px;text-align:center;line-height: 50px;background: #f0f0f0;color: #666666;padding: 0 28px;font-size: 18px;border-radius: 3px;border-top: 3px solid #dcdcdc;margin-bottom: 10px;}
+.login-list>p a{float: right;font-size: 14px;color: #999999}
+.login-list ul{padding: 10px 28px 0;}
+.login-list ul input{height: 40px;border: 1px solid #eee;background:#fff;width: 100%;margin-bottom: 10px;padding: 0 10px}
+.login-list ul li:nth-child(3) input{width: 205px;}
+.login-list ul li:nth-child(3) span{float: right;width: 100px;height: 40px;overflow: hidden;display: inline-block}
+.login-list ul button{display: inline-block;border:none;width: 100%;height: 40px;line-height: 40px;text-align: center;color: #ffffff;background: #4778C7;border-radius: 5px;margin-top: 30px}
+.login-bottom{text-align: center;color: #999999;margin-top: 20px}
+
+ input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #c2c2c2;
+}
+ input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #c2c2c2;
+}
+ input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #c2c2c2;
+}
+ input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #c2c2c2;
+}

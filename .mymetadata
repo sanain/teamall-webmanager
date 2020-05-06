@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="teamall-webmanager
+  id="myeclipse.1465722771049"
+  context-root="/teamall-webmanager"
+  j2ee-spec="6.0"
+  archive="teamall-webmanager.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

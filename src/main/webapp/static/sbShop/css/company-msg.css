@@ -1,0 +1,47 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+body .container{padding-left: 20px;padding-right: 20px}
+
+.company{
+    margin: 20px;
+}
+.company>div{
+    margin-bottom: 20px;
+}
+.company>div>p{
+    height: 45px;
+    line-height: 45px;
+ /*    padding-left: 15px; */
+    font-size: 16px;
+    color: #333333;
+    border-bottom:1px solid #e5e5e5;
+    margin-bottom:20px;
+/*     background: #f7f7f7;
+    margin-bottom: 10px;
+        border-radius: 3px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    border-top: 3px solid #dcdcdc; */
+}
+.btts{text-align:center}
+.company ul{overflow: hidden;margin-bottom: 0;border: 1px solid #dcdcdc;border-bottom:none}
+.company .jb-msg ul{border-bottom:1px solid #dcdcdc;}
+.company .gs-msg ul:last-child{border-bottom:1px solid #dcdcdc;}
+.company .lx-mag ul:last-child{border-bottom:1px solid #dcdcdc;}
+.company ul li{float: left;line-height: 40px}
+.company ul li:nth-child(1){width: 160px;text-align: right;padding-right: 5px;color: #333;background:#f7f7f7;height:100%}
+.company ul li:nth-child(2){width: 75%;color: #444;border-left: 1px solid #dcdcdc;padding-left: 5px;}
+.company ul li b{color: #ff0000}
+.gs-msg input[type=text]{height: 30px;border: 1px solid #eee;width: 300px;padding: 0 10px;margin-right: 10px}
+.gs-msg textarea{width: 300px;border: 1px solid #eee;outline: none;padding:5px 10px}
+/* .gs-msg textarea{resize: none;width: 300px;border: 1px solid #DCDCDC;border-radius: 3px;outline: none;padding:5px 10px} */
+.gs-msg .gs-msg-you input{width: 130px;}
+.gs-msg .gs-msg-you input:last-child{margin-left: 8px}
+
+.lx-mag input[type=text]{height: 30px;border: 1px solid #eee;width: 300px;padding: 0 10px}
+.lx-mag ul:last-child li:first-child{height: 30px}
+.lx-mag ul:last-child li a{ display: inline-block;width: 80px;text-align: center;color: #FFFFFF;background: #4778C7;border-radius: 4px}

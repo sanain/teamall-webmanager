@@ -1,0 +1,43 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+
+.in-email{padding: 10px}
+.in-top{position: relative;border-bottom: 1px solid #eee;height: 35px}
+.in-top ul{float: left;width: 100%;position: absolute;height:35px;margin-bottom: 0;z-index: 2;background:#f0f0f0;}
+.in-top ul li{cursor:pointer;float: left;height: 35px;line-height: 35px;text-align: center;width: 100px;margin-right: 5px;}
+.in-top ul li.active{border:1px solid #eee;border-bottom: 1px solid #FFFFFF;border-top:3px solid #344fa5;background:#fff;}
+.in-top ul li a{color: #666666}
+.del-email{position: absolute;top:10px;right:15px;padding-left: 20px;color: #666666;z-index: 2}
+
+.email-list{padding: 20px}
+.list-box{padding: 15px;background: #fff;height: 150px;position: relative;border: 1px solid #eee;margin-bottom: 20px;border-radius: 3px;box-shadow: 0 0 7px rgba(0,0,0,0.1);border-top: 3px solid #dcdcdc;}
+.list-box>p{line-height: 30px}
+.list-box>p img{float: right;cursor: pointer}
+.list-box>a{position: absolute;right: 20px;bottom: 20px;color: #337ab7}
+.list-box>div p{margin-top: 10px;color:#666}
+.list-box b{color: #FF6D1D}
+
+body .pagination{padding:20px;}
+body .pagination ul{box-shadow: 0 0 7px rgba(0,0,0,0.1)}
+body .pagination ul>li>a, .pagination ul>li>span{color:#319ed4;border: 1px solid #eee;}
+body .pagination ul>li:first-child>a, .pagination ul>li:first-child>span{border-radius:0;border: 1px solid #eee;}
+body .disabled.controls>a{border-radius:0;}
+body .pagination ul>.active>a,body .pagination ul>.active>span{border-color:#eee}
+body .disabled.controls>a input{border-radius:0;border: 1px solid #eee;}
+
+
+/*是否删除*/
+.delete{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);z-index: 10000}
+.delete-box{position: absolute;width: 300px;height: 130px;top: 50%;left: 50%;margin-top: -65px;margin-left: -150px;background: #ffffff;}
+.delete-box>p{background: #f0f0f0;text-align: center;height: 30px;line-height: 30px;margin-bottom: 15px;font-size: 16px}
+.delete-box>p img{position: absolute;right: 15px;top: 12px;cursor: pointer}
+.delete-box>div{text-align: center}
+.delete-box>div p{margin-bottom: 20px}
+.delete-box>div a{display: inline-block;height: 30px;line-height: 30px;border-radius: 5px;width: 80px}
+.delete-box>div a:nth-child(2){background: #78A7FF;color: #ffffff;margin-right: 10px}
+.delete-box>div a:nth-child(3){border: 1px solid #DCDCDC;color: #666666;margin-left: 10px}

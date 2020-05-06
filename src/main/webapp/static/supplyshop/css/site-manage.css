@@ -1,0 +1,74 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+
+.site{padding: 20px}
+.site>p{height: 40px;line-height: 40px;border-bottom: 1px solid #eee;font-size: 16px;background:#f7f7f7;padding-left:15px;box-shadow: 0 0 7px rgba(0,0,0,0.1)}
+.site>p a{float: right;color: #333333}
+.site>p b span{color: #337ab7}
+
+.site-list{border: 1px solid #eee;margin-top: 25px;border-radius: 3px;box-shadow: 0 0 7px rgba(0,0,0,0.1);border-top: 3px solid #dcdcdc;}
+.site-list ul{overflow: hidden;margin-bottom: 0;height: 30px;line-height: 30px;border-bottom: 1px solid #eee}
+.site-list ul:last-child{border-bottom: none}
+.site-list ul li{float: left;text-align: center}
+.site-list ul li:nth-child(1){width:40%;border-right:1px solid #eee;text-align:left;padding-left:10px }
+.site-list ul li:nth-child(2){width:20%;border-right:1px solid #eee;  }
+.site-list ul li:nth-child(3){width:20%;border-right:1px solid #eee;  }
+.site-list ul li:nth-child(4){width:20%;border-right:1px solid #eee;  }
+
+.list-top{background: #f7f7f7;}
+.list-body li:nth-child(1){overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: break-word;}
+.list-body.active li:last-child{background: url("../images/gou.png") no-repeat right center;}
+.list-body b{font-weight: normal}
+.list-body:nth-child(odd){background:#f9f9f9}
+
+.site-new{overflow: hidden;margin-top: 30px;border-radius: 3px;box-shadow: 0 0 7px rgba(0,0,0,0.1);border-top: 3px solid #dcdcdc;}
+.site-new>p{font-size: 16px;height:35px;line-height:35px;padding-left:15px;background:#f7f7f7}
+.site-new ul{float: left;width: 100%;margin-bottom: 0;border:1px solid #dcdcdc;border-bottom:none;width:96%;margin-left:2%}
+.site-new ul:last-child{border-bottom:1px solid #dcdcdc;}
+.site-new ul b{color: #ff0000}
+.site-new ul select{outline: none;border: 1px solid #eee;height: 30px;line-height:30px;min-width: 120px;margin-right: 10px;padding-left: 10px;}
+.site-new ul input[type=text]{height: 30px;border: 1px solid #eee;padding: 0 10px}
+.site-new ul li{float: left;line-height: 40px;min-height: 1px}
+.site-new ul li:nth-child(1){width: 150px;text-align: right;}
+.site-new ul li:nth-child(2){border-left:1px solid #dcdcdc;padding-left:10px;}
+.site-new ul:nth-child(3) input{min-width: 500px}
+.site-new ul:nth-child(4) input{min-width: 350px}
+.site-new ul:nth-child(5) input{min-width: 350px}
+.site-new ul:nth-child(6) input{width: 150px}
+.site-new ul:nth-child(6) input:nth-child(1){width: 80px}
+.site-new ul:last-child button{list-style-type: none;display: inline-block;width: 80px;height: 30px;text-align: center;color: #ffffff;background: #337ab7;border-radius: 5px;}
+
+.site-new .checkbox input[type="checkbox"]:checked + label::before {
+    background: #78A7FF;
+    top: 7px;
+    border: 1px solid #78A7FF;
+}
+.site-new .checkbox label::before{
+    top: 7px;
+}
+.site-new .checkbox i{
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background: url(../images/icon_pick.png) no-repeat;
+    top: 11px;
+    left: -18px;
+    cursor: pointer;
+}
+
+
+/*是否删除*/
+.delete{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);z-index: 10000}
+.delete-box{border-radius: 3px;box-shadow: 0 0 7px rgba(0,0,0,0.1);border-top: 3px solid #dcdcdc;position: absolute;width: 300px;height: 130px;top: 50%;left: 50%;margin-top: -65px;margin-left: -150px;background: #ffffff;}
+.delete-box>p{background: #f7f7f7;text-align: center;height: 30px;line-height: 30px;margin-bottom: 15px;font-size: 16px;}
+.delete-box>p img{position: absolute;right: 15px;top: 12px;cursor: pointer}
+.delete-box>div{text-align: center}
+.delete-box>div p{margin-bottom: 20px}
+.delete-box>div a{display: inline-block;height: 30px;line-height: 30px;border-radius: 5px;width: 80px}
+.delete-box>div a:nth-child(2){background: #337ab7;color: #ffffff;margin-right: 10px}
+.delete-box>div a:nth-child(3){border: 1px solid #DCDCDC;color: #666666;margin-left: 10px}

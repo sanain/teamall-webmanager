@@ -1,0 +1,65 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+
+.particulars{padding: 20px}
+.particulars-top span:last-child{color: #666666}
+
+.particulars-body{padding:20px;border: 1px solid #eee;margin-top: 30px;background: #fff;border-radius: 3px;box-shadow: 0 0 7px rgba(0,0,0,0.1)}
+.particulars-body p{font-size: 16px; line-height:35px;   border-radius: 3px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    border-top: 3px solid #dcdcdc;background: #F7F7F7;padding-left: 15px}
+
+.particulars-body a:nth-child(3){background:#ffffff}
+
+.particulars-foot{padding: 20px;margin-top: 50px;border: 1px solid #eee;border-radius: 3px;box-shadow: 0 0 7px rgba(0,0,0,0.1)}
+.particulars-foot>p{font-size: 16px}
+.ren-ul{overflow: hidden;border: 1px solid #eeeeee;box-shadow: 0 0 7px rgba(0,0,0,0.1)}
+.ren-ul li{float: left;width: 50%;line-height: 30px;color: #666666;border-bottom: 1px solid #eeeeee;padding-left: 10px;border-right: 1px solid #eeeeee}
+.shop-box{border: 1px solid #eee;    border-radius: 3px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    border-top: 3px solid #dcdcdc;}
+.shop-box ul{overflow: hidden;margin-bottom: 0;}
+.shop-box ul li{float: left;text-align: center}
+.shop-box ul li:nth-child(1){width: 47.32%}
+.shop-box ul li:nth-child(2){width:17.56% }
+.shop-box ul li:nth-child(3){width:17.56% }
+.shop-box ul li:nth-child(4){width:17.56% }
+.shop-top{background: #f0f0f0}
+.shop-top li{line-height: 30px}
+.shop-list li{border-left: 1px solid #eee}
+.shop-list li:nth-child(1){text-align: left;padding: 10px;border-left: none}
+.img-box{width: 50px;height: 50px;display: inline-block;border: 1px solid #eee}
+.img-box img{width: 100%;}
+
+.dan-hao{margin-top: 20px;margin-bottom:20px;box-shadow: 0 0 7px rgba(0,0,0,0.1)}
+.dan-hao ul{overflow: hidden;border: 1px solid #eeeeee;margin-bottom: 0;border-bottom: none}
+.dan-hao ul:last-child{border-bottom: 1px solid #eeeeee}
+.dan-hao ul li{float: left;line-height: 30px;}
+.dan-hao ul li:nth-child(1){width: 150px;text-align: right;background: #F7F7F7}
+.dan-hao ul li:nth-child(2){padding-left: 10px}
+
+/*拒绝*/
+.refuse{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);z-index: 100}
+.refuse-box{width: 340px;height: 200px;background: #ffffff;position: absolute;top: 50%;left: 50%;margin-top: -100px;margin-left: -170px;overflow: hidden}
+.refuse-box>p{height: 35px;line-height: 35px;background: #f0f0f0;text-align: center;position: relative}
+.refuse-box>p img{position: absolute;right: 15px;top: 12px;cursor: pointer}
+.refuse-div{padding: 0 20px;text-align: center}
+.refuse-div textarea{outline: none;border: 1px solid #DCDCDC;width: 100%;height:100px;border-radius: 3px;resize: none;padding: 5px}
+.refuse-div a{display: inline-block;height: 30px;line-height: 30px;color: #ffffff;border-radius: 5px;background: #78A7FF;width: 80px}
+
+/*同意*/
+.consent{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);z-index: 100}
+.consent-box{width: 340px;height: 140px;background: #ffffff;position: absolute;top: 50%;left: 50%;margin-top: -70px;margin-left: -170px;overflow: hidden}
+.consent-box>p{height: 35px;line-height: 35px;background: #f0f0f0;text-align: center;position: relative}
+.consent-box>p img{position: absolute;right: 15px;top: 12px;cursor: pointer}
+.consent-div{padding: 0 20px;text-align: center}
+.consent-div textarea{outline: none;border: 1px solid #DCDCDC;width: 100%;height:100px;border-radius: 3px;resize: none;padding: 5px}
+.consent-div a{display: inline-block;height: 30px;line-height: 30px;color: #ffffff;border-radius: 5px;background: #78A7FF;width: 80px}
+.consent-div a:nth-child(3){margin-right: 10px}
+.consent-div a:nth-child(4){background: #ffffff;color: #666666;border: 1px solid #DCDCDC;margin-left: 10px}
+.consent-div span{margin-bottom: 20px;display: inline-block}

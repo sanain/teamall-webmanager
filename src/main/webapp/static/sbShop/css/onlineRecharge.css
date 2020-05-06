@@ -1,0 +1,31 @@
+p{margin: 0;}
+.lishi-add{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);}
+.lishi-add-box{border:3px solid #69AC72;position: absolute;width: 450px;height: 300px;background: #ffffff;border-radius: 5px;top: 50%;left: 50%;margin-left: -225px;margin-top: -150px}
+.lishi-add-box>p{background:#69AC72;line-height: 39px;height: 39px;color: #fff;padding: 0 20px;border-bottom: 1px solid #e5e5e5;font-size: 16px;margin: 0;}
+.lishi-add-box>p img{float: right;margin-top: 14px;cursor: pointer}
+.lishi-add-div{height: 300px;overflow-y:auto; color: #000}
+.lishi-add-body{padding: 20px;}
+.lishi-add-body>div{margin-bottom: 10px;font-size: 14px;}
+.lishi-add-body>div>span:nth-child(1){width:30%;text-align:right;display:inline-block;}
+.lishi-add-body>div>textarea{width: 96%;height: 122px;resize:none}
+
+.lishi-adds{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);}
+.lishi-adds-box{border:3px solid #69AC72;position: absolute;width: 450px;height: 300px;background: #ffffff;border-radius: 5px;top: 50%;left: 50%;margin-left: -225px;margin-top: -150px}
+.lishi-adds-box>p{background:#69AC72;line-height: 39px;height: 39px;color: #fff;padding: 0 20px;border-bottom: 1px solid #e5e5e5;font-size: 16px;margin: 0;}
+.lishi-adds-box>p img{float: right;margin-top: 14px;cursor: pointer}
+.lishi-adds-div{height: 300px;overflow-y:auto; color: #000}
+.lishi-adds-body{padding: 20px;}
+.lishi-adds-body>div{margin-bottom: 10px;font-size: 14px;}
+.lishi-adds-body>div>span:nth-child(1){width:30%;text-align:right;display:inline-block;}
+.lishi-adds-body>div>textarea{width: 96%;height: 122px;resize:none}
+
+.userlist{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);}
+.userlist-box{border:3px solid #69AC72;position: absolute;width: 800px;height: 460px;background: #ffffff;border-radius: 5px;top: 50%;left: 50%;margin-left: -400px;margin-top: -230px}
+.userlist-box>p{background:#69AC72;line-height: 39px;height: 39px;color: #fff;padding: 0 20px;border-bottom: 1px solid #e5e5e5;font-size: 16px;margin: 0;}
+.userlist-box>p img{float: right;margin-top: 14px;cursor: pointer}
+.userlist-div{color: #000}
+.userlist-body{padding: 0 0}
+.userlist-body>div{margin-bottom: 10px;font-size: 14px;}
+.userlist-body>div>span:nth-child(1){width:30%;text-align:right;display:inline-block;}
+.table-div-a{height:320px;overflow-y:auto}
+.pagination{margin-left: 1px}

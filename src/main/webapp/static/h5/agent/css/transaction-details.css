@@ -1,0 +1,33 @@
+@charset "UTF-8";
+html body{max-width: 750px;margin: 0 auto}
+input { font-family: '微软雅黑'; color: #333333}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, lengend, li, ol, p, pre, span, td, textarea, th, ul { margin: 0; padding: 0; outline: 0; -webkit-tap-highlight-color: rgba(255,0,0,0); }
+li, ol, ul { margin: 0; padding: 0; list-style: none; }
+input { color: #333; }
+body{max-width: 750px}
+u{text-decoration: none}
+a { text-decoration: none; outline: 0; }
+
+html body{max-width: 750px}
+.head-nav{height: 1.31rem;line-height: 1.31rem;background: #ffffff;text-align: center;font-weight: bold;padding-right: 1.26rem;border-bottom: 1px solid #DADADA;box-shadow: 0 0 3px #ccc;position: relative}
+.head-nav img{float: left;width: 9.33%;margin-left: 0.48rem;margin-top: 0.33rem}
+.head-nav span{font-size: 0.44rem;}
+.head-nav a{float: right;font-size: 0.41rem;margin-right: 0.46rem;color: #333333}
+
+
+
+html body{background: #f4f4f4;}
+.context{padding-bottom: 1.32rem}
+
+.dates{height: 1.12rem;line-height: 1.12rem;color: #4F4F4F;font-size: 0.38rem;font-weight: 600;text-align: center;background: #ffffff}
+.dates a{display: inline-block;width: 1.9%}
+.dates a:first-child{margin-right: 0.26rem}
+.dates a:last-child{margin-left: 0.26rem}
+.dates a img{width: 100%;position: relative;bottom: 2px}
+
+.detailed{border-top: 1px solid #E5E5E5;background: #ffffff}
+.detailed ul{overflow: hidden;border-bottom: 1px solid #E5E5E5}
+.detailed ul li{float: left;width: 33.33%;text-align: center;color: #4F4F4F;overflow: hidden;text-overflow: ellipsis; white-space: nowrap;word-wrap: break-word;}
+.detailed .list-head{height: 0.9rem;line-height: 0.9rem;font-size: 0.346rem;font-weight: 600}
+.detailed .detailed-list ul li{height: 1.28rem;line-height: 1.28rem;font-size: 0.38rem}
+

@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd"
+	default-lazy-init="true"  >
+	<bean id="TimerJob" class="com.jq.support.main.controller.job.TimerJob"></bean>
+
+
+	<bean id="orderStatusText" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>orderStatus</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>
+    <bean id="doTimeOrderStatusText" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="orderStatusText"/>
+          </property>
+          <!-- cron表达式 -->
+          <property name="cronExpression">
+             <value>0 0 3 * * ?</value>
+          </property>
+     </bean>
+     
+	<bean id="upDateebAftersaleText" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>upDateebAftersale</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>
+    <bean id="doTimeupDateebAftersaleText" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="upDateebAftersaleText"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 0/30 * * * ?</value>
+          </property>
+     </bean>
+     
+     <bean id="upmyhomegyText" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>myhomegy</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>
+    <bean id="doTimemyhomegyText" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="upmyhomegyText"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 5 0 * * ?</value>
+          </property>
+     </bean>
+     
+     <bean id="splevelText" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>splevel</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>
+    <bean id="doSplevelText" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="splevelText"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 10 0 * * ?</value>
+          </property>
+     </bean>
+     
+      <bean id="summarizingText" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>summarizing</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>
+    <bean id="doSummarizingText" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="summarizingText"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 15 0 * * ?</value>
+          </property>
+     </bean>
+     
+    <!--  <bean id="SendStatusMessinText" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>SendStatusMessin</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>
+    <bean id="doSendStatusMessinText" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="SendStatusMessinText"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 0/15 * * * ?</value>
+          </property>
+     </bean> -->
+     
+     <bean id="GuolvSizeText" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>GuolvSize</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>
+    <bean id="doGuolvSizeTextText" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="GuolvSizeText"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 0/15 * * * ?</value>
+          </property>
+     </bean>
+     <bean id="userOfflineRechargeStatusText" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>userOfflineRechargeStatus</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>
+    <bean id="douserOfflineRechargeStatusText" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="userOfflineRechargeStatusText"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 0/5 * * * ?</value>
+          </property>
+     </bean>
+     
+     <bean id="sendMsgToUser" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>sendMsgToUser</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>   
+	
+    <bean id="dosendMsgToUser" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="sendMsgToUser"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 0/1 * * * ?</value>
+          </property>
+     </bean>	
+     
+     <bean id="pmSysLoveAllotReset" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>pmSysLoveAllotReset</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>   
+	
+    <bean id="doPmSysLoveAllotReset" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="pmSysLoveAllotReset"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 0/3 * * * ?</value>
+          </property>
+     </bean>	
+     
+     
+     <bean id="monthSalesAmountSumM" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>monthSalesAmountSum</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>   
+	
+    <bean id="domonthSalesAmountSum" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="sendMsgToUser"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 40 0 * * ?</value>
+          </property>
+     </bean>
+     	
+     <bean id="updateRongCloudTokenJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>updateRongCloudToken</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>   
+	
+    <bean id="doupdateRongCloudToken" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="updateRongCloudTokenJob"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 0 0/2 * * ?</value>
+          </property>
+     </bean>   
+     
+     <bean id="updateUserTokenJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>updateUserToken</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>   
+	
+    <bean id="doupdateUserToken" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="updateUserTokenJob"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 1 22 19 9 ? 2017</value>
+          </property>
+     </bean>	
+     
+     
+     <bean id="oneDayPayDetailJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>oneDayPayDetail</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>   
+	
+    <bean id="dooneDayPayDetail" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="oneDayPayDetailJob"/>
+          </property>
+          <property name="cronExpression">
+             <value>0 15 0 * * ?</value>
+          </property>
+     </bean>	
+     
+     <!-- nc查询存量信息-->
+     <bean id="ncQueryWareHouseJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>queryWareHouse</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>   
+	
+    <bean id="doncQueryWareHouseDetail" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="ncQueryWareHouseJob"/>
+          </property>
+          <property name="cronExpression">
+              <value>0 0/3 * * * ?</value>
+          </property>
+     </bean>	
+     
+      <!-- 每周一发送短信提醒-->
+     <bean id="smsOneDayJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>smsOneDay</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>   
+	
+    <bean id="dosmsOneDayDetail" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="smsOneDayJob"/>
+          </property>
+          <property name="cronExpression">
+              <value>0 45 8 ? * 2</value>
+          </property>
+     </bean>	
+	
+	<bean id="balanceStatistics" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>saveAmtStatistics</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>
+    <bean id="dobalanceStatistics" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="balanceStatistics"/>
+          </property>
+          <!-- cron表达式 -->
+          <property name="cronExpression">
+             <value>59 59 23 * * ?</value>
+          </property>
+     </bean>
+
+
+
+    <!--报表定时统计-->
+    <bean id="statisticsTimerJob" class="com.jq.support.main.controller.job.StatisticsTimerJob"></bean>
+
+    <!--营业汇总的日报-->
+    <bean id="oneDayStatisticsJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneDayStatistics</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneDayStatisticsJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneDayStatisticsJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 1 0 * * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+        <!--<value>0 39 9 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+
+    <!--营业汇总的月报-->
+    <bean id="oneMonthStatisticsJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneMonthStatistics</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneMonthStatisticsJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneMonthStatisticsJob"/>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 41 17 * * ?</value>-->
+        <!--</property>-->
+        <property name="cronExpression">
+            <value>0 3 0 1 * ?</value>
+        </property>
+    </bean>
+
+
+    <!--营业汇总的日报（以门店为单位）-->
+    <bean id="oneDayStatisticsByShopJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneDayStatisticsByShop</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneDayStatisticsByShopJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneDayStatisticsByShopJob"/>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 0 10 * * ?</value>-->
+        <!--</property>-->
+        <property name="cronExpression">
+        <value>0 5 0 * * ?</value>
+        </property>
+    </bean>
+
+    <!--营业汇总的月报(以门店为单位)-->
+    <bean id="oneMonthStatisticsByShopJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneMonthStatisticsByShop</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneMonthStatisticsByShopJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneMonthStatisticsByShopJob"/>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 43 17 * * ?</value>-->
+        <!--</property>-->
+        <property name="cronExpression">
+            <value>0 7 0 1 * ?</value>
+        </property>
+    </bean>
+
+
+
+    <!--营业日报（所有门店）-->
+    <bean id="totalBusinessDailyByAllJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>totalBusinessDailyByAll</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="totalBusinessDailyByAllJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="totalBusinessDailyByAllJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 9 0 * * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 50 11 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+
+    <!--营业日报(以门店为单位)-->
+    <bean id="totalBusinessDailyByShopJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>totalBusinessDailyByShop</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="totalBusinessDailyByShopJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="totalBusinessDailyByShopJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 11 0 * * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 51 11 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+
+
+    <!--菜单营业分析（所有门店）-->
+    <bean id="totalProductTasteByAllJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>totalProductTasteByAll</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="totalProductTasteByAllJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="totalProductTasteByAllJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 13 0 * * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+        <!--<value>0 17 12 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+
+
+
+    <!--菜品营业分析（以门店为单位）-->
+    <bean id="totalProductTasteByShopJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>totalProductTasteByShop</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="totalProductTasteByShopJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="totalProductTasteByShopJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 15 0 * * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 18 12 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+
+
+
+    <!--营业指标日报（所有门店）-->
+    <bean id="oneDayIndicatorJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneDayIndicator</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneDayIndicatorJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneDayIndicatorJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 17 0 * * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 12 11 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+
+    <!--营业指标月报（所有门店）-->
+    <bean id="oneMonthIndicatorJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneMonthIndicator</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneMonthIndicatorJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneMonthIndicatorJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 19 0 1 * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 49 17 * * ?</value>-->
+        <!--</property>-->
+
+    </bean>
+
+    <!--营业指标日报（以门店为单位）-->
+    <bean id="oneDayIndicatorByShopJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneDayIndicatorByShop</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneDayIndicatorByShopJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneDayIndicatorByShopJob"/>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 21 11 * * ?</value>-->
+        <!--</property>-->
+        <property name="cronExpression">
+            <value>0 21 0 * * ?</value>
+        </property>
+    </bean>
+
+    <!--营业指标月报（以门店为单位）-->
+    <bean id="oneMonthIndicatorByShopJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneMonthIndicatorByShop</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneMonthIndicatorByShopJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneMonthIndicatorByShopJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 23 0 1 * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 26 18 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+
+
+    <!--门店收入（以门店为单位）-->
+    <bean id="payTotalJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="statisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>payTotal</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="payTotalJobJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="payTotalJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 49 0 * * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 9 17 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+
+
+    <!--代理商报表定时统计-->
+    <bean id="agentStatisticsTimerJob" class="com.jq.support.main.controller.job.AgentStatisticsTimerJob"></bean>
+
+    <!--营业汇总的日报（代理商所有门店）（代理商）-->
+    <bean id="oneDayStatisticsAgentJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="agentStatisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneDayStatistics</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneDayStatisticsAgentJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneDayStatisticsAgentJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 25 0 * * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+        <!--<value>0 57 17 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+
+    <!--营业汇总的日报（以门店为单位）（代理商）-->
+    <bean id="oneDayStatisticsByShopAgentJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="agentStatisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneDayStatisticsByShop</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneDayStatisticsByShopAgentJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneDayStatisticsByShopAgentJob"/>
+        </property>
+        <!--<property name="cronExpression">-->
+        <!--<value>0 6 0 1 * ?</value>-->
+        <!--</property>-->
+        <property name="cronExpression">
+            <value>0 27 0 * * ?</value>
+        </property>
+    </bean>
+
+    <!--营业汇总的月报（代理商所有的门店）（代理商）-->
+    <bean id="oneMonthStatisticsAgentJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="agentStatisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneMonthStatistics</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneMonthStatisticsAgentJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneMonthStatisticsAgentJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 29 0 1 * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 42 9 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+
+    <!--营业汇总的月报（以门店为单位）（代理商）-->
+    <bean id="oneMonthStatisticsByShopAgentJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="agentStatisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneMonthStatisticsByShop</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneMonthStatisticsByShopAgentJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneMonthStatisticsByShopAgentJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 31 0 1 * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 43 9 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+
+
+
+    <!--营业日报（代理商所有门店）（代理商）-->
+    <bean id="totalBusinessDailyAgentJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="agentStatisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>totalBusinessDaily</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="totalBusinessDailyAgentJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="totalBusinessDailyAgentJob"/>
+        </property>
+        <!--<property name="cronExpression">-->
+        <!--<value>0 56 16 * * ?</value>-->
+        <!--</property>-->
+        <property name="cronExpression">
+            <value>0 33 0 * * ?</value>
+        </property>
+    </bean>
+
+
+    <!--营业日报（以门店为单位）（代理商）-->
+    <bean id="totalBusinessDailyByShopAgentJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="agentStatisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>totalBusinessDailyByShop</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="totalBusinessDailyByShopAgentJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="totalBusinessDailyByShopAgentJob"/>
+        </property>
+        <!--<property name="cronExpression">-->
+        <!--<value>0 57 16 * * ?</value>-->
+        <!--</property>-->
+        <property name="cronExpression">
+            <value>0 35 0 * * ?</value>
+        </property>
+    </bean>
+
+
+    <!--菜品口味分析（所有门店）（代理商）-->
+    <bean id="totalProductTasteAgentJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="agentStatisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>totalProductTaste</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="totalProductTasteAgentJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="totalProductTasteAgentJob"/>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 8 17 * * ?</value>-->
+        <!--</property>-->
+        <property name="cronExpression">
+            <value>0 37 0 * * ?</value>
+        </property>
+    </bean>
+
+
+    <!--菜品口味分析（以门店为单位）（代理商）-->
+    <bean id="totalProductTasteByShopAgentJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="agentStatisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>totalProductTasteByShop</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="totalProductTasteByShopAgentJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="totalProductTasteByShopAgentJob"/>
+        </property>
+        <!--<property name="cronExpression">-->
+        <!--<value>0 9 17 * * ?</value>-->
+        <!--</property>-->
+        <property name="cronExpression">
+            <value>0 39 0 * * ?</value>
+        </property>
+    </bean>
+
+
+
+
+    <!--每日营业指标（所有门店）（代理商）-->
+    <bean id="oneDayIndicatorAgentJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="agentStatisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneDayIndicator</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneDayIndicatorAgentJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneDayIndicatorAgentJob"/>
+        </property>
+        <!--<property name="cronExpression">-->
+        <!--<value>0 6 0 1 * ?</value>-->
+        <!--</property>-->
+        <property name="cronExpression">
+            <value>0 41 0 * * ?</value>
+        </property>
+    </bean>
+
+    <!--每日营业指标（以门店为单位）（代理商）-->
+    <bean id="oneDayIndicatorAgentByShopJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="agentStatisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneDayIndicatorByShop</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneDayIndicatorByShopAgentJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneDayIndicatorAgentByShopJob"/>
+        </property>
+        <!--<property name="cronExpression">-->
+        <!--<value>0 6 0 1 * ?</value>-->
+        <!--</property>-->
+        <property name="cronExpression">
+            <value>0 43 0 * * ?</value>
+        </property>
+    </bean>
+
+    <!--每月营业指标（代理商所有门店）（代理商）-->
+    <bean id="oneMonthIndicatorAgentJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="agentStatisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneMonthIndicator</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneMonthIndicatorAgentJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneMonthIndicatorAgentJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 45 0 1 * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 0 0 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+
+    <!--每月营业指标（以门店为单位）（代理商）-->
+    <bean id="oneMonthIndicatorByShopAgentJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="agentStatisticsTimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>oneMonthIndicatorByShop</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <bean id="oneMonthIndicatorByShopAgentJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="oneMonthIndicatorByShopAgentJob"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 47 0 1 * ?</value>
+        </property>
+        <!--<property name="cronExpression">-->
+            <!--<value>0 58 10 * * ?</value>-->
+        <!--</property>-->
+    </bean>
+     <bean id="cancelOrderStatus" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject">
+	    	<ref bean="TimerJob"/>
+	    </property>
+	    <property name="targetMethod">
+	         <value>cancelOrderStatus</value>
+	    </property>
+	    <property name="concurrent" value="false" /> 
+	</bean>
+    <bean id="doCancelOrderStatus" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+          <property name="jobDetail">
+              <ref bean="cancelOrderStatus"/>
+          </property>
+          <!-- cron表达式 -->
+          <property name="cronExpression">
+             <value>0 0/5 * * * ? *</value>
+          </property>
+     </bean>
+
+    <bean id="invalidOrderInfo" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="TimerJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>invalidOrderInfo</value>
+        </property>
+        <property name="concurrent" value="false" />
+    </bean>
+    <bean id="doInvalidOrderInfo" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="invalidOrderInfo"/>
+        </property>
+        <!-- cron表达式 -->
+        <property name="cronExpression">
+            <value>0 0/5 * * * ? *</value>
+        </property>
+    </bean>
+
+    <bean name="startQuertz" lazy-init="false" autowire="no" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                 <ref bean="doGuolvSizeTextText"/><!--定时过滤敏感字，每隔15分钟运行一次-->
+                <ref bean="domonthSalesAmountSum"/> <!--月销量统计，每天凌晨12点40分运行一次-->
+                <ref bean="doTimeOrderStatusText"/><!--待付款订单取消，每天3点执行一次-->
+                <!--<ref bean="doTimeupDateebAftersaleText"/>--><!--自动处理退款，每隔30分钟一次-->
+                <ref bean="doTimemyhomegyText"/><!--日统计每日新增御可贡茶与让利金额，每天凌晨12点05分统计-->
+                <!--<ref bean="douserOfflineRechargeStatusText"/>--><!--处理退款未处理，每隔5分钟执行一次-->
+                <ref bean="doSummarizingText"/><!--红包汇总，每天凌晨12点15分运行一次-->
+                <ref bean="doSplevelText"/><!--日统计公益收益，每天凌晨12点10分运行一次。现不启用，已经用shell进行计算了-->
+                <ref bean="dosendMsgToUser"/><!-- 定时发送定时消息，每隔1分钟执行一次-->
+                <!--<ref bean="doupdateRongCloudToken"/>--><!--更新用户融云token，每2个小时执行一次-->
+                <ref bean="dooneDayPayDetail"/> <!--统计一天内的支付金额情况，每天凌晨12点15分统计-->
+                <!--<ref bean="dosmsOneDayDetail"/> --><!--每周一定时发送短信提醒，每周一早上8点45分执行一次-->
+
+                <!--<ref bean="doncQueryWareHouseDetail"/>--><!--nc同步仓库中商品数量，每隔3分钟同步一次-->
+                <ref bean="dobalanceStatistics"/><!--统计余额汇总，每天23点59分59秒执行一次-->
+                <!--<ref bean="doPmSysLoveAllotReset"/>--><!--分配金额定时同步，每隔3分钟检查一个最后一条，分配成功并且未同步的时进行同步-->
+
+                <ref bean="oneDayStatisticsJobTrigger"/><!--每天0点1统计营业汇总日报-->
+                <ref bean="oneMonthStatisticsJobTrigger"/><!--每月1号0点3统计营业汇总日报-->
+                <ref bean="oneDayStatisticsByShopJobTrigger"/><!--每天0点5统计营业汇总日报-->
+                <ref bean="oneMonthStatisticsByShopJobTrigger"/><!--每月1号0点7统计营业汇总日报-->
+
+                <ref bean="totalBusinessDailyByAllJobTrigger"/><!--每天0点9统计营业日报-->
+                <ref bean="totalBusinessDailyByShopJobTrigger"/><!--每天0点11统计营业日报-->
+
+                <ref bean="totalProductTasteByAllJobTrigger"/><!--每天0点13统计菜单营业分析-->
+                <ref bean="totalProductTasteByShopJobTrigger"/><!--每天0点15统计菜单营业分析-->
+
+                <ref bean="oneDayIndicatorJobTrigger"/><!--每天0点17统计营业指标日报-->
+                <ref bean="oneMonthIndicatorJobTrigger"/><!--每月1号0点19统计营业指标月报-->
+
+
+                <ref bean="oneDayIndicatorByShopJobTrigger"/><!--每天0点21统计营业指标日报-->
+                <ref bean="oneMonthIndicatorByShopJobTrigger"/><!--每月1号0点23统计营业指标月报-->
+
+
+                <!--以下是代理商报表-->
+                <!--营业汇总-->
+                <ref bean="oneDayStatisticsAgentJobTrigger"/><!--每天0点25统计营业指标日报-->
+                <ref bean="oneDayStatisticsByShopAgentJobTrigger"/><!--每天0点27统计营业指标日报-->
+                <ref bean="oneMonthStatisticsAgentJobTrigger"/><!--每月1号0点29统计营业指标日报-->
+                <ref bean="oneMonthStatisticsByShopAgentJobTrigger"/><!--每月1号0点31统计营业指标日报-->
+
+                <!--营业日报-->
+                <ref bean="totalBusinessDailyAgentJobTrigger"/><!--每天0点33统计营业指标日报-->
+                <ref bean="totalBusinessDailyByShopAgentJobTrigger"/><!--每天0点35统计营业指标日报-->
+
+                <!--菜单口味分析-->
+                <ref bean="totalProductTasteAgentJobTrigger"/><!--每天0点37统计营业指标日报-->
+                <ref bean="totalProductTasteByShopAgentJobTrigger"/><!--每天0点39统计营业指标日报-->
+
+                <!--营业指标-->
+                <ref bean="oneDayIndicatorAgentJobTrigger"/><!--每天0点41统计营业指标日报-->
+                <ref bean="oneDayIndicatorByShopAgentJobTrigger"/><!--每天0点43统计营业指标日报-->
+                <ref bean="oneMonthIndicatorAgentJobTrigger"/><!--每月1号0点45统计营业指标日报-->
+                <ref bean="oneMonthIndicatorByShopAgentJobTrigger"/><!--每月1号0点47统计营业指标日报-->
+                
+                <ref bean="doCancelOrderStatus"/><!-- 每五分钟执行取消30分钟后未支付的订单 -->
+
+                <ref bean="payTotalJobJobTrigger"/><!-- 每日0:49统计门店支付 -->
+
+                <ref bean="doInvalidOrderInfo"/><!-- 合利付退款异步处理 -->
+
+            </list>
+        </property>
+    </bean>
+</beans>

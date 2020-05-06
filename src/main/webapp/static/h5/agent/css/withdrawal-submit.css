@@ -1,0 +1,23 @@
+@charset "UTF-8";
+html body{max-width: 750px;margin: 0 auto}
+input { font-family: '微软雅黑'; color: #333333}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, lengend, li, ol, p, pre, span, td, textarea, th, ul { margin: 0; padding: 0; outline: 0; -webkit-tap-highlight-color: rgba(255,0,0,0); }
+li, ol, ul { margin: 0; padding: 0; list-style: none; }
+input { color: #333; }
+body{max-width: 750px}
+u{text-decoration: none}
+a { text-decoration: none; outline: 0; }
+
+html body{max-width: 750px}
+.head-nav{height: 1.31rem;line-height: 1.31rem;background: #ffffff;text-align: center;font-weight: bold;padding-right: 1.26rem;;border-bottom: 1px solid #DADADA;box-shadow: 0 0 3px #ccc;position: relative}
+.head-nav img{float: left;width: 9.33%;margin-left: 0.48rem;margin-top: 0.33rem}
+.head-nav span{font-size: 0.44rem;}
+.head-nav a{position: absolute;font-size: 0.41rem;right: 0.46rem;color: #4F4F4F}
+
+
+
+html body{background: #f4f4f4;}
+.context{padding-bottom: 1.32rem}
+.withdrawal{text-align: center;padding-top: 1rem}
+.withdrawal img{width: 26.67%}
+.withdrawal p{font-size: 0.4rem;color: #666666;margin-top: 1.2rem}

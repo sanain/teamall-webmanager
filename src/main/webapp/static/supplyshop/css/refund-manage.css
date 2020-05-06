@@ -1,0 +1,150 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+
+.house{padding: 20px}
+.house-nav{border-bottom: 1px solid #eee;height: 30px;margin-top: 20px}
+.house-nav li{float: left;line-height: 30px;padding: 0 15px;cursor: pointer}
+.house-nav li.active{position: relative;border: 1px solid #eee;border-top-right-radius: 3px;border-top-left-radius: 3px;border-bottom: 1px solid #FFFFFF;top: -2px;}
+.house-div{float: left;width: 100%}
+.house-div>ul{height: 30px;float: left;width: 49.9%;margin-bottom: 10px}
+.house-div>ul>li{float: left;line-height: 30px;height: 30px}
+.house-div>ul>li:nth-child(1){width: 100px;text-align: right}
+.house-div>ul>li input{width: 150px;height: 30px;border: 1px solid #eee;padding: 0 10px}
+.house-div>ul>li select{height: 30px;border: 1px solid #eee;outline: none;padding-left: 10px;width: 150px}
+.house-div .two-inp input{width: 64px;text-align: center}
+
+.div-fenlei li:last-child{position: relative;}
+.fenlei{position: absolute;line-height: normal;border: 1px  solid #eee;width: 150px;padding: 10px;color: #666666;display: none}
+.fenlei.active{display: block}
+.fenlei-ul li{position: relative}
+.fenlei-ul>li{padding-left: 15px}
+.fenlei-ul li b{position: absolute;background: url("../images/zhankai1.png") no-repeat;width: 11px;height: 6px;left: 0;top: 10px;z-index: 3;cursor: pointer}
+.fenlei-ul li span{display: inline-block;line-height: 24px;font-size: 12px;width: 100%;cursor: pointer}
+.fenlei-ul li span:hover{background: #E6F0FF}
+.fenlei-ul ul span{padding-left: 15px}
+.fenlei-ul ul{display: none}
+.fenlei-ul li.active-b b{background: url("../images/zhankai2.png") no-repeat;}
+.fenlei-ul li.active-b ul{display: block}
+
+.house-div .checkbox input[type="checkbox"]:checked + label::before {
+    background: #78A7FF;
+    top: 8px;
+    border: 1px solid #78A7FF;
+}
+.house-div .checkbox label::before{
+    top: 8px;
+}
+ .house-div .checkbox i{
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background: url(../images/icon_pick.png) no-repeat;
+    top: 12px;
+    left: -18px;
+    cursor: pointer;
+}
+.two-btn{text-align: center;padding-top: 15px;clear: both}
+.two-btn a{display: inline-block;height: 30px;line-height: 30px;background: #78A7FF;color: #FFFFFF;width: 80px;border-radius: 5px}
+.two-btn a:first-child{margin-right: 10px}
+.two-btn a:last-child{margin-left: 10px}
+
+.house-list-top{overflow: hidden;margin: 20px 0;width: 100%;background: #f0f0f0}
+.house-list-top li{float: left}
+.house-list-top li:nth-child(1){width: 20%;}
+.house-list-top li:nth-child(2){width: 12%;}
+.house-list-top li:nth-child(3){width: 8%;}
+.house-list-top li:nth-child(4){width: 12%;}
+.house-list-top li:nth-child(5){width: 12%;}
+.house-list-top li:nth-child(6){width: 12%;}
+.house-list-top li:nth-child(7){width: 12%;}
+.house-list-top li:nth-child(8){width: 12%;}
+.house-list-body{overflow: hidden}
+.house-list-body ul{text-align: center;float: left}
+.house-list-body .list-left{width: 40%}
+.house-list-body .list-right{width: 60%}
+.house-list-body ul li{float: left;overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;}
+.house-list-body{border: 1px solid #DCDCDC;margin-bottom: 15px}
+.house-list-body .list-left>li{width: 100%;border-bottom: 1px solid #eee}
+.house-list-body .list-left>li:last-child{border-bottom: none}
+.house-list-body .list-left ul{width: 100%;}
+.house-list-body .list-left ul:last-child{border-bottom: none}
+.house-list-body .list-left ul li:nth-child(1){width:50%;text-align: left;padding: 10px 0 8px 15px; }
+.house-list-body .list-left ul li:nth-child(2){width:30% ;line-height: 82px}
+.house-list-body .list-left ul li:nth-child(3){width:20% ;line-height: 82px}
+.house-list-body .list-left ul li:nth-child(2) div{line-height: normal;display: inline-block;position: relative;top: 11px}
+.house-list-body .list-left ul li:nth-child(2) div p{font-size: 12px;color: #666666;overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;}
+
+.house-list-body .list-right li:nth-child(1){width:20% ;border-left: 1px solid #eee;}
+.house-list-body .list-right li:nth-child(2){width:20% ;border-left: 1px solid #eee;}
+.house-list-body .list-right li:nth-child(3){width:20% ;border-left: 1px solid #eee;}
+.house-list-body .list-right li:nth-child(4){width:20% ;border-left: 1px solid #eee;}
+.house-list-body .list-right li:nth-child(5){width:20% ;border-left: 1px solid #eee;}
+.house-list-body .list-right li:nth-child(4) div{line-height: normal;display: inline-block;position: relative;top: 11px}
+.house-list-body .list-right li:nth-child(5) div{line-height: normal;display: inline-block;position: relative;top: 11px}
+.house-list-body .list-right li:nth-child(5) div p{color: #ff0000;overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;}
+.house-list-body .list-right li p{overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;}
+.house-list-body .list-right li div{overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+    word-wrap: break-word;}
+
+.house-list-top{border-bottom: 1px solid #eee;position: relative;top:-2px}
+.house-list-top li{height: 35px;line-height: 35px;text-align: center;color: #333333;}
+.house-list-top li a{color: #666666}
+.house-list-body>p{height: 30px;line-height: 30px;background: #f0f0f0;margin-bottom: 0;padding-left: 15px}
+.house-list-body>p span{display: inline-block}
+.house-list-body>p a:hover{color: #FF6600}
+.house-list-body .checkbox input[type="checkbox"]:checked + label::before {
+    background: #78A7FF;
+    top: 9px;
+    border: 1px solid #78A7FF;
+}
+.house-list-body .checkbox label::before{
+    top: 9px;
+}
+.house-list-body .checkbox i{
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background: url(../images/icon_pick.png) no-repeat;
+    top: 13px;
+    left: -18px;
+    cursor: pointer;
+}
+.house-list .checkbox input{top: 6px}
+.house-list-body>p .checkbox input{top: 7px}
+.house-list-body>p .checkbox i{top: 6px}
+.house-list-body>p .checkbox label::before{top: 2px}
+.house-list-body>p .checkbox input[type="checkbox"]:checked + label::before{top:2px}
+.house-list-body>p span:nth-child(1){margin-right: 20px}
+.house-list-body>p span:nth-child(2){margin-right: 20px}
+
+.house-list-body .img-kuang{width: 60px;height: 60px;overflow: hidden;border: 1px solid #eee;display: inline-block}
+.house-list-body li{text-align: center}
+.house-list-body ul li u{vertical-align: top;display: inline-block;width: 50%}
+
+
+
+
+.beizhu{margin-top: 30px}
+.beizhu span{color: #666666}
+.beizhu u{color: #FF6D1D}

@@ -1,0 +1,20 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+body .container{padding-left: 20px;padding-right: 20px}
+
+body{background: #F6F6F6;}
+.comm-rule{padding: 50px 35px 0;}
+.comm-rule>p{color: #333744;margin-bottom:50px;padding-left: 20px;text-align:center;font-size:16px;background:#fff;line-height:40px;font-weight:600;box-shadow: 0 0 7px rgba(0,0,0,0.1);}
+.sanbu{margin: 4% auto 5%;}
+.comm-rule .div-a{text-align: center;margin-top: 25px;}
+.comm-rule .div-a a{display: inline-block;margin: 0 auto;width: 380px;height: 40px;line-height: 40px;text-align: center;color: #ffffff;background: #337ab7;border-radius: 8px;}
+.comm-rule .div-a a:hover{color: #ffffff}
+.rule-list{background: #ffffff;border: 1px solid #E9E9E9;padding: 15px;color: #666666;box-shadow: 0 0 7px rgba(0,0,0,0.1);}
+.rule-list-top{margin-top: 10px;font-weight: 600}
+.rule-list-div>p{margin-top: 5px;font-weight: 600}
+.rule-list-div li:nth-child(1){font-weight: 600}

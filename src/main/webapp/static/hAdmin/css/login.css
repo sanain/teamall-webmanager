@@ -1,0 +1,31 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+
+.login{position: relative}
+.login>img{height: 100%;width: 100%}
+.login-body{position: absolute;width: 430px;left: 50%;margin-left: -215px;top: 50%;text-align: center;margin-top: -174px}
+.login-body input{width: 310px;height: 40px;padding: 0 10px;border: 1px solid #e5e5e5;margin-bottom: 12px;border-radius: 3px}
+.login-body ul{margin-top: 70px}
+.login-body ul button{display: inline-block;width: 90px;height: 40px;line-height: 40px;text-align: center;color: #ffffff;background: #69AC72;border-radius: 3px;margin-top: 30px}
+
+.login-body ul li{position: relative}
+.login-body ul li span{position: absolute;color: #ff0000;font-size: 12px;right: 174px;top: 0}
+
+.login-bottom{position: absolute;bottom: 0;text-align: center;color: #69AC72;width: 100%}
+ input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #c2c2c2;
+}
+ input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #c2c2c2;
+}
+ input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #c2c2c2;
+}
+ input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #c2c2c2;
+}

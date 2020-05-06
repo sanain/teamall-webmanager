@@ -1,0 +1,29 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+
+.order{padding: 20px}
+.crumbs-div{}
+
+.refuse{border: 1px solid #eee;padding: 20px;margin-top: 30px;box-shadow: 0 0 7px rgba(0,0,0,0.1);}
+.refuse>p{color: #333333;font-size: 16px;margin-bottom: 30px;line-height:35px;text-align:center;background:#f7f7f7;border-radius: 3px;box-shadow: 0 0 7px rgba(0,0,0,0.1);border-top: 3px solid #dcdcdc;}
+
+.refuse ul{overflow: hidden;padding-left: 20px;color: #666666;}
+.refuse ul>li{float: left}
+.refuse ul>li:nth-child(1){width: 10%}
+.refuse ul>li:nth-child(2){width: 85%}
+.refuse ul>li textarea{outline: none;resize: none;width: 80%;height: 100px;padding: 10px;border: 1px solid #eee;}
+.area li:nth-child(2){position: relative;padding-bottom: 15px}
+.area li:nth-child(2) span{position: absolute;font-size: 12px;color: #999999;right: 20%;bottom: 0;}
+.refuse ul>li input[type=file]{display: inline-block;width: 10px}
+.fil li:nth-child(1){line-height: 30px}
+.fil li:nth-child(2){position: relative;}
+.fil li:nth-child(2) label{position: absolute;left: 0;background: #ffffff;width: 100px;height: 30px;line-height:30px;text-align:center;border: 1px solid #DCDCDC;font-weight: normal;cursor: pointer;}
+.fil li:nth-child(2) span{font-size: 12px}
+ol li{float:left;}
+ol{overflow:hidden;}
+.refuse-btn{text-align: center}

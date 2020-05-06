@@ -1,0 +1,27 @@
+@charset "UTF-8";
+html body{max-width: 750px;margin: 0 auto}
+input { font-family: '微软雅黑'; color: #333333}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, lengend, li, ol, p, pre, span, td, textarea, th, ul { margin: 0; padding: 0; outline: 0; -webkit-tap-highlight-color: rgba(255,0,0,0); }
+li, ol, ul { margin: 0; padding: 0; list-style: none; }
+input { color: #333; }
+body{max-width: 750px}
+u{text-decoration: none}
+a { text-decoration: none; outline: 0; }
+
+html body{max-width: 750px}
+.head-nav{height: 1.31rem;line-height: 1.31rem;background: #ffffff;text-align: center;font-weight: bold;padding-right: 1.26rem;border-bottom: 1px solid #DADADA;box-shadow: 0 0 3px #ccc;position: relative}
+.head-nav img{float: left;width: 9.33%;margin-left: 0.48rem;margin-top: 0.33rem}
+.head-nav span{font-size: 0.44rem;}
+.head-nav a{float: right;font-size: 0.41rem;margin-right: 0.46rem;color: #333333}
+
+
+
+html body{background: #f4f4f4;}
+.context{padding-bottom: 1.32rem}
+.msg{padding: 0.6rem 0.47rem 0}
+.msg>p{width: 1.85rem;height: 0.52rem;line-height:0.52rem;border-radius: 5px;background: #C9C9C9;color: #ffffff;font-size: 0.32rem;margin: 0 auto 0.46rem;text-align: center}
+.msg-box{padding: 0.6rem 0.46rem 0.8rem 0.266rem;background: #ffffff;border-radius: 5px;}
+.msg-box p{color: #4F4F4F;font-size: 0.373rem;font-weight: 600}
+.msg-box span{color: #666666;font-size: 0.346rem}
+
+

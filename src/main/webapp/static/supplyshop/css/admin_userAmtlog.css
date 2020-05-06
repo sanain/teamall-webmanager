@@ -1,0 +1,66 @@
+p{margin: 0;}
+        .lishi{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);}
+        .lishi-box{border:3px solid #69AC72;position: absolute;width: 450px;height: 300px;background: #ffffff;border-radius: 5px;top: 50%;left: 50%;margin-left: -225px;margin-top: -150px}
+        .lishi-box>p{background:#69AC72;line-height: 39px;height: 39px;color: #fff;padding: 0 20px;border-bottom: 1px solid #e5e5e5;font-size: 16px;margin: 0;}
+        .lishi-box>p img{float: right;margin-top: 14px;cursor: pointer}
+        .lishi-div{height: 300px;overflow-y:auto; color: #000}
+        .lishi-body{padding: 20px;}
+        .lishi-body>p{height: 30px;line-height: 30px;margin-bottom: 15px}
+        .lishi-body>p i{width: 30px;height: 30px;text-align: center;line-height: 30px;border-radius: 50%;border: 1px solid #e5e5e5;float: left}
+        .lishi-body>p i img{border-radius: 50%;width:100%}
+        .lishi-body>p b{font-weight: normal; color: #529E5C;margin-left: 10px}
+        .lishi-body>p span{float: left;color: #000}
+        .lishi-body u{display: inline-block;width: 160px;height: 160px;line-height: 160px;text-align: center;overflow: hidden;margin-right: 1px}
+        .lishi-body>div{margin-bottom: 10px;font-size: 14px;}
+        .lishi-body>div>span:nth-child(1){width:30%;text-align:right;display:inline-block;}
+        
+.lishi-no{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);}
+.lishi-no-box{border:3px solid #69AC72;position: absolute;width: 450px;height: 300px;background: #ffffff;border-radius: 5px;top: 50%;left: 50%;margin-left: -225px;margin-top: -150px}
+.lishi-no-box>p{background:#69AC72;line-height: 39px;height: 39px;color: #fff;padding: 0 20px;border-bottom: 1px solid #e5e5e5;font-size: 16px;margin: 0;}
+.lishi-no-box>p img{float: right;margin-top: 14px;cursor: pointer}
+.lishi-no-div{height: 300px;overflow-y:auto; color: #000}
+.lishi-no-body{padding: 20px;}
+.lishi-no-body>div{margin-bottom: 10px;font-size: 14px;}
+.lishi-no-body>div>a{margin-top: 20px;margin-top:8px}
+.lishi-no-body>form>div>textarea{width: 96%;height: 122px;resize:none}
+
+.lishi-yes,.pi-yes{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);}
+.lishi-yes-box{border:3px solid #69AC72;position: absolute;width: 270px;height: 160px;background: #ffffff;border-radius: 5px;top: 50%;left: 50%;margin-left: -135px;margin-top: -80px}
+.lishi-yes-box>p{background:#69AC72;line-height: 39px;height: 39px;color: #fff;padding: 0 20px;border-bottom: 1px solid #e5e5e5;font-size: 16px;margin: 0;}
+.lishi-yes-box>p img{float: right;margin-top: 14px;cursor: pointer}
+.lishi-yes-div{height: 300px;overflow-y:auto; color: #000}
+.lishi-yes-body{padding: 20px;}
+.lishi-yes-body>div{margin-bottom: 10px;font-size: 14px;}
+.lishi-yes-body>form>div{text-align:center;}
+.lishi-yes-body>div>span:nth-child(1){width:30%;text-align:right;display:inline-block;}
+.lishi-yes-body>div>textarea{width: 96%;height: 122px;resize:none}
+.lishi-yes-body>form>div>textarea{width: 96%;height: 122px;resize:none}
+
+.check{position: fixed;top:0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);z-index: 10000}
+        .check-box{width: 750px;background: #ffffff;position: absolute;top: 50%;left: 50%;margin-left: -375px;margin-top: -200px;}
+        .check-box>p{height: 35px;line-height: 35px;background: #f0f0f0;position: relative;text-align: center}
+        .check-box>p img{position: absolute;top:12px;right: 15px;cursor: pointer}
+        .check-box ul{overflow: hidden;padding: 10px;outline:none;list-style:none}
+        .check-box ul li.checkbox{float: left;width: 30%;line-height: 30px;margin-top: 0;}
+        .check-btn{text-align: center;padding-bottom: 20px}
+        .check-btn a{display: inline-block;width: 80px;height: 30px;line-height: 30px;border-radius: 5px;border: 1px solid #dcdcdc}
+        .check-btn a:nth-child(1){background: #68C250;border: 1px solid #68C250;color: #ffffff;margin-right: 5px}
+        .check-btn a:nth-child(2){color: #666666;margin-left: 5px}
+        .check-box .checkbox input[type="checkbox"]:checked + label::before {
+            background: #68C250;
+            top:0 px;
+            border: 1px solid #68C250;
+        }
+.check-box .checkbox label::before{
+            top: 0px;
+        }
+.check-box .checkbox i{
+            position: absolute;
+            width: 12px;
+            height: 8px;
+            background: url(../images/icon_pick.png) no-repeat;
+            top: 4px;
+            left: -18px;
+            cursor: pointer;
+        }
+.check-box .checkbox input{top: 10px;position:relative}

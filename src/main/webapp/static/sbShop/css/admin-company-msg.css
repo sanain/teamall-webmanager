@@ -1,0 +1,46 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+body .container{padding-left: 20px;padding-right: 20px}
+
+.company{
+    padding: 20px;
+    background: #E3E4E6
+}
+.company>div{
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding-bottom: 20px;
+}
+.company>div>p{
+    height: 45px;
+    line-height: 45px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #333333;
+    background: #f0f0f0;
+    margin-bottom: 10px;
+}
+.company .nav-ul{overflow: hidden;height: 40px;line-height: 40px;background: #ffffff;padding-left: 33px;margin-bottom: 20px;}
+.company .nav-ul li{float: left;padding-right: 4%;width: auto;}
+.company .nav-ul li:nth-child(1){width: auto;margin-right: 0;}
+.company .nav-ul li:nth-child(2){width: auto}
+.company .nav-ul li a{display: inline-block;color: #666666;height: 40px;line-height: 40px}
+.company .nav-ul li a.active{color: #69AC72;border-bottom: 2px solid #69AC72}
+.company ul{overflow: hidden;margin-bottom: 10px}
+.company ul li{float: left;line-height: 30px}
+.company ul li:nth-child(1){width: 20%;text-align: right;margin-right: 15px;color: #666666}
+.company ul li:nth-child(2){width: 75%;color: #444}
+.company ul li b{color: #ff0000}
+.gs-msg input{height: 30px;border: 1px solid #DCDCDC;border-radius: 3px;width: 300px;padding: 0 10px;margin-right: 10px}
+.gs-msg textarea{resize: none;width: 300px;border: 1px solid #DCDCDC;border-radius: 3px;outline: none;padding:5px 10px}
+.gs-msg .gs-msg-you input{width: 130px;}
+.gs-msg .gs-msg-you input:last-child{margin-left: 8px}
+
+.lx-mag input{height: 30px;border: 1px solid #DCDCDC;border-radius: 3px;width: 300px;padding: 0 10px}
+.lx-mag ul:last-child li:first-child{height: 30px}
+.lx-mag ul:last-child li a{ display: inline-block;width: 80px;height: 30px;text-align: center;color: #FFFFFF;background: #69AC72;border-radius: 4px}

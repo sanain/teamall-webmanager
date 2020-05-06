@@ -1,0 +1,42 @@
+@charset "UTF-8";
+html body{max-width: 750px;margin: 0 auto}
+input { font-family: '微软雅黑'; color: #333333}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, lengend, li, ol, p, pre, span, td, textarea, th, ul { margin: 0; padding: 0; outline: 0; -webkit-tap-highlight-color: rgba(255,0,0,0); }
+li, ol, ul { margin: 0; padding: 0; list-style: none; }
+input { color: #333; }
+body{max-width: 750px}
+u{text-decoration: none}
+a { text-decoration: none; outline: 0; }
+
+html body{max-width: 750px}
+.head-nav{height: 1.31rem;line-height: 1.31rem;background: #ffffff;text-align: center;font-weight: bold;padding-right: 1.26rem;border-bottom: 1px solid #DADADA;box-shadow: 0 0 3px #dadada}
+.head-nav img{float: left;width: 9.33%;margin-left: 0.48rem;margin-top: 0.33rem}
+.head-nav span{font-size: 0.44rem;}
+.head-nav a{float: right;font-size: 0.41rem;margin-right: 0.46rem;color: #333333}
+
+.head-nav ul{overflow: hidden;margin-bottom: 0;}
+.head-nav ul li{float: left;width: 33%;text-align: center}
+.head-nav ul li a{float: none;margin-right: 0;color: #666666;font-size: 0.38rem;position: relative;top: -2px}
+.head-nav ul li a.active{color: #ff0000;border-bottom: 2px solid #ff0000;display: inline-block;}
+
+
+html body{background: #f4f4f4;}
+.context{padding-bottom: 1.32rem}
+.shop-msg{padding: 4%;font-size: 0.37rem;color: #4F4F4F;background: #ffffff;min-height: 3.7rem}
+.shop-fen{height: 1.33rem;line-height: 1.33rem;border-top: 1px solid #F0F0F0;background: #ffffff}
+.shop-fen li{float: left;width: 33%;text-align: center;font-size: 0.35rem;}
+.shop-fen li span{color: #4F4F4F;margin-right: 10px}
+.shop-fen li b{font-weight: normal;color: #FF0000}
+.shop-dizhi{color: #666666;font-size: 0.375rem;background: #ffffff;border-bottom: 1px solid #EBEBEB;border-top: 1px solid #EBEBEB}
+.shop-dizhi li{height: 1.3rem;line-height: 1.3rem;padding-left: 0.62rem;border-bottom: 1px solid #EBEBEB}
+.shop-dizhi li:last-child{border-bottom: none}
+.shop-dizhi li img{width: 6%;margin-right: 10px}
+
+
+
+
+.download{position: fixed;bottom: 0;width: 100%;height: 1.32rem;line-height:1.32rem;background: #f8f8f8;padding: 0 4%;overflow: hidden}
+.download .down-logo{width: 9.4%;}
+.download>span{font-size: 0.4rem;color: #333333;margin-left: 5px}
+.download a{float: right;height: 0.66rem;line-height:0.66rem;border-radius: 38px;background: #ff0000;color: #ffffff;width: 2rem;text-align: center;margin-top: 0.33rem;font-size: 0.35rem}
+.download .d-del{position: absolute;right: 0;top: 0;width: 5.6%;cursor: pointer}

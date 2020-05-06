@@ -1,0 +1,134 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+
+.batch{padding: 10px}
+.batch-top{height: 50px;line-height: 50px;background: #f7f7f7;padding-left: 15px;margin-bottom: 20px;border-radius: 3px;box-shadow: 0 0 7px rgba(0,0,0,0.1);border-top: 3px solid #dcdcdc;}
+.batch-top input[type=text]{height: 30px;border: 1px solid #eee;width: 150px;padding-left: 10px}
+.batch-top .date{width: 120px}
+.batch-top .num{width: 60px;text-align: center;padding-left: 0;}
+.batch-top select{height: 30px;border: 1px solid #eee;min-width:100px;}
+.batch-top a{display: inline-block;width: 80px;height: 30px;text-align: center;background: #78A7FF;color: #FFFFFF;line-height: 30px;margin-left: 5px;border-radius: 5px}
+#btnSubmit{float:right;margin-top:7px;}
+.a-box .radio label::before{width:14px;height:14px;top:3px;}
+.a-box .radio label::after{width:6px;height:6px;top:7px;left:4px;background:#4778C7}
+
+.batch-body{}
+.batch-body-left{float: left;width: 20%;padding-right: 10px}
+.batch-body-left>p{height: 50px;line-height: 50px;background: #f7f7f7;padding-left: 15px;margin-bottom: 10px;border-radius: 3px;box-shadow: 0 0 7px rgba(0,0,0,0.1);border-top: 3px solid #dcdcdc;}
+.batch-body-left ul{}
+.batch-body-left ul li{line-height: 30px;}
+.batch-body-left ul li a{display:inline-block;width:100%;padding-left: 15px;color:#666}
+.batch-body-left ul li a:hover{background: #f0f0f0;}
+
+body .pagination ul{box-shadow: 0 0 7px rgba(0,0,0,0.1)}
+body .pagination ul>li>a, .pagination ul>li>span{color:#319ed4;border: 1px solid #eee;}
+body .pagination ul>li:first-child>a, .pagination ul>li:first-child>span{border-radius:0;border: 1px solid #eee;}
+body .disabled.controls>a{border-radius:0;}
+body .pagination ul>.active>a,body .pagination ul>.active>span{border-color:#eee}
+body .disabled.controls>a input{border-radius:0;border: 1px solid #eee;}
+
+
+.batch-body-right{float: left;width: 80%;padding-left: 10px}
+.batch-body-right>.first-div{height: 40px;line-height: 40px;background: #f7f7f7;padding-left: 15px;box-shadow: 0 0 7px rgba(0,0,0,0.1);margin-bottom:10px;}
+.batch-body-right>.first-div>div{float:right;position: relative}
+.batch-body-right>.first-div a{margin-top:5px;float:right;height: 30px;line-height: 30px;padding: 0 10px;background: #337ab7;color: #FFFFFF;border-radius: 5px;margin-left: 5px}
+.batch-body-right>.first-div span{display: inline-block}
+.batch-body-right .checkbox input[type="checkbox"]:checked + label::before {
+    background: #78A7FF;
+    top: 12px;
+    border: 1px solid #78A7FF;
+}
+.batch-body-right .checkbox label::before{
+    top: 12px;
+}
+.batch-body-right .checkbox i{
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background: url(../images/icon_pick.png) no-repeat;
+    top: 16px;
+    left: -18px;
+    cursor: pointer;
+}
+.batch-body-right .checkbox input[type="checkbox"]{top: 11px}
+.batch-body-right .head-ul{background:#f7f7f7;box-shadow: 0 0 7px rgba(0,0,0,0.1);}
+.batch-body-right ul{float: left;width: 100%;margin-bottom: 0;border: 1px solid #eee;border-bottom:none}
+.batch-body-right ul:last-child{border-bottom:1px solid #eee}
+.batch-body-right ul li{float: left;text-align: center}
+.batch-body-right ul li:nth-child(1){width: 5.6%}
+.batch-body-right ul li:nth-child(2){width: 32%}
+.batch-body-right ul li:nth-child(3){width: 9%}
+.batch-body-right ul li:nth-child(4){width: 9%}
+.batch-body-right ul li:nth-child(5){width: 16%}
+.batch-body-right ul li:nth-child(6){width: 10%}
+.batch-body-right ul li:nth-child(7){width: 8%}
+.batch-body-right ul li:nth-child(8){width: 10%}
+.head-ul li{height: 30px;line-height: 30px;text-align: center}
+.body-ul{margin-bottom: 100px;float: left;box-shadow: 0 0 7px rgba(0,0,0,0.1);}
+.body-ul>ul{padding: 15px 0;}
+.body-ul>ul:nth-child(even){background: #f9f9f9}
+.body-ul>ul>li:nth-child(1){text-align: left;padding-left: 15px}
+.body-ul>ul>li:nth-child(2){text-align: left;}
+.body-ul>ul>li:nth-child(2) div{width: 50px;height: 50px;border: 1px solid #DCDCDC;overflow: hidden;display: inline-block;margin-right: 30px;background: #FFFFFF}
+.body-ul>ul>li:nth-child(2) span{float:right;width:65%;}
+.body-ul>ul>li:nth-child(3){line-height: 54px}
+.body-ul>ul>li:nth-child(4){line-height: 54px}
+.body-ul>ul>li:nth-child(5){padding-top: 11px}
+.body-ul>ul>li:nth-child(6){padding-top: 8px}
+.body-ul>ul>li:nth-child(7){line-height: 54px}
+.body-ul>ul>li:nth-child(8){position: relative}
+.body-ul>ul>li:nth-child(8) a{display: inline-block;padding: 3px 8px;border-radius: 5px}
+.body-ul>ul>li:nth-child(8) a:nth-child(1){margin-bottom: 5px}
+.body-ul>ul>li:nth-child(8) a.box-a{}
+.body-ul>ul>li:nth-child(8)>div{color:#666666;position: absolute;width: 160px;min-height: 100px;background: #FFFFFF;border: 1px solid #DCDCDC;box-shadow: 0 0 2px #ccc;border-radius: 3px;top:25px;left: -87px;z-index: 4;text-align: right;}
+.body-ul .a-box{padding: 15px;display: none}
+.body-ul .a-box img{position: absolute;top: 10px;right: 10px;cursor: pointer}
+.body-ul .a-box ul{margin-top:10px;border: none;text-align: left;max-height:120px;overflow-y:auto}
+.body-ul .a-box ul li{float: none;width: 100%;text-align: left}
+.body-ul .a-box ul ul{padding-left: 15px;border: none;margin-top: 0;}
+.body-ul .a-box a{display: inline-block;color:#fff}
+.a-box{z-index:111;padding: 15px;display: none;position: absolute;width: 160px;min-height: 100px;background: #FFFFFF;border: 1px solid #DCDCDC;box-shadow: 0 0 2px #ccc;text-align: right}
+.a-box img{position: absolute;top: 10px;right: 10px;cursor: pointer}
+.a-box ul{margin-top:10px;border: none;text-align: left}
+.a-box ul li{float: none;width: 100%;text-align: left}
+.a-box ul ul{padding-left: 15px;border: none;margin-top: 0;}
+.batch-body-right .a-box a{display: inline-block;background: #b5915b;}
+.first-fen{position: relative}
+.batch-body-right>.first-div>div div{line-height: normal}
+.batch-body-right>.first-div>div div ul li{width: 100%;float: none}
+.body-ul .checkbox input[type="checkbox"]:checked + label::before {
+    top: 17px;
+}
+.body-ul .checkbox label::before{
+    top: 17px;
+}
+.body-ul .checkbox i{
+    top: 21px;
+}
+.a-box .checkbox input[type="checkbox"]:checked + label::before {
+    top: 5px;
+}
+.a-box .checkbox label::before{
+    top: 5px;
+}
+.a-box .checkbox i{
+    top: 9px;
+}
+.ku-box{display:none;position: absolute;background: #FFFFFF;width: 250px;text-align: center;padding: 15px 0;box-shadow: 0 0 2px #ccc;border: 1px solid #DCDCDC;}
+.ku-box select{border: 1px solid #eee;height: 25px;outline: none}
+.ku-box input{border: 1px solid #eee;height: 25px;margin: 10px 0;width: 195px;padding: 0 10px}
+
+    /*分页*/
+.fenye{text-align: right;margin-bottom: 50px;margin-top: 15px;clear: both;}
+.fenye a{display: inline-block;width: 40px;height: 36px;line-height: 36px;text-align: center;color: #666666;margin-left: 5px;background: #FFFFFF;border: 1px solid #DCDCDC}
+.fenye .prev{width: 70px;}
+.fenye .prev:hover{background: #01AAED;color: #FFFFFF;border: 1px solid #01AAED}
+.fenye .next{width: 70px;}
+.fenye .next:hover{background: #01AAED;color: #FFFFFF;border: 1px solid #01AAED}
+.fenye span.active{display: inline-block;width: 40px;height: 36px;line-height: 36px;color: #01AAED;text-align: center;border: 1px solid #DCDCDC;margin-left: 5px}
+.fenye input{width: 50px;height: 35px;border: 1px solid #DCDCDC;text-align: center;margin-left: 5px}

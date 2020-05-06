@@ -1,0 +1,34 @@
+p{margin: 0;}
+.lishi-yes{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);}
+.lishi-yes-box{border:3px solid #69AC72;position: absolute;width: 250px;height: 150px;background: #ffffff;border-radius: 5px;top: 50%;left: 50%;margin-left: -175px;margin-top: -75px}
+.lishi-yes-box>p{background:#69AC72;line-height: 39px;height: 39px;color: #fff;padding: 0 20px;border-bottom: 1px solid #e5e5e5;font-size: 16px;margin: 0;}
+.lishi-yes-box>p img{float: right;margin-top: 14px;cursor: pointer}
+.lishi-yes-div{height: 150px;overflow-y:auto; color: #000}
+.lishi-yes-body{padding: 20px;}
+.lishi-yes-body>p{font-size: 13px}
+.lishi-yes-body>div{text-align:center;margin-top:12px}
+.lishi-yes-body>div>a{margin-top: 20px}
+
+.lishi-no{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);}
+.lishi-no-box{border:3px solid #69AC72;position: absolute;width: 450px;height: 300px;background: #ffffff;border-radius: 5px;top: 50%;left: 50%;margin-left: -225px;margin-top: -150px}
+.lishi-no-box>p{background:#69AC72;line-height: 39px;height: 39px;color: #fff;padding: 0 20px;border-bottom: 1px solid #e5e5e5;font-size: 16px;margin: 0;}
+.lishi-no-box>p img{float: right;margin-top: 14px;cursor: pointer}
+.lishi-no-div{height: 300px;overflow-y:auto; color: #000}
+.lishi-no-body{padding: 20px;}
+.lishi-no-body>div{margin-bottom: 10px;font-size: 14px;}
+.lishi-yes-body>div>a{margin-top: 20px;margin-top:8px}
+.lishi-no-body>form>div>textarea{width: 96%;height: 122px;resize:none}
+
+.lishi-img{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);}
+.lishi-img-box{border:3px solid #69AC72;position: absolute;width:500px;height: 460px;background: #ffffff;border-radius: 5px;top: 50%;left: 50%;margin-left: -250px;margin-top: -230px}
+.lishi-img-box>p{background:#69AC72;line-height: 39px;height: 39px;color: #fff;padding: 0 20px;border-bottom: 1px solid #e5e5e5;font-size: 16px;margin: 0;}
+.lishi-img-box>p img{float: right;margin-top: 14px;cursor: pointer}
+.lishi-img-div{height: 418px;overflow:hidden; color: #000}
+.lishi-img-body>img{margin-bottom: 0;}
+
+.wi{width: 100px}
+.wid{width: 140px}
+.widd{width: 150px}
+/* 轮播 */
+#banner .swiper-slide {text-align: center;}
+.swiper-slide>img{height: 370px;margin-top: 16px;}

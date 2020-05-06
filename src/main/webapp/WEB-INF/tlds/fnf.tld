@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+  version="2.0">
+    
+  <description>JSTL 1.1 functions library</description>
+  <display-name>JSTL functions cms</display-name>
+  <tlib-version>1.1</tlib-version>
+  <short-name>fnc</short-name>
+  <uri>http://java.sun.com/jsp/jstl/functionsc</uri>
+
+
+  <function>
+    <description>获取大星星</description>
+    <name>getBigStar</name>
+    <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+    <function-signature>java.lang.String getBigStar(java.lang.Float, java.lang.String)</function-signature>
+    <example>${fnf:getBigStar(obj,path)}</example>
+  </function>
+  
+  
+   <function>
+    <description> 图片大小处理</description>
+    <name>imageScaleUrl</name>
+    <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+    <function-signature>java.lang.String imageScaleUrl(java.lang.String, java.lang.String, java.lang.String, java.lang.String)</function-signature>
+    <example>${fnf:imageScaleUrl(url,swidth,sheight,type)}</example>
+  </function>
+ 
+  <function>
+    <description>获取当前登陆用户对象</description>
+    <name>getUserInfo</name>
+    <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+    <function-signature>com.jq.support.model.User getUserInfo()</function-signature>
+    <example>${fnf:getUserInfo()}</example>
+  </function>
+ 
+ <function>
+    <description>按新闻类别获取前几条新闻</description>
+    <name>getnewsList</name>
+    <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+    <function-signature>java.util.List getnewsList(java.lang.String, int)</function-signature>
+    <example>${fnf:getnewsList(newstypeid, num)}</example>  
+  </function> 
+ 
+  
+  <function>
+    <description>获取链接列表</description>
+    <name>getLinkList</name>
+    <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+    <function-signature>java.util.List getLinkList(java.lang.String, int, java.lang.String)</function-signature>
+    <example>${fnf:getLinkList(categoryId, number, param)}</example>  
+  </function> 
+  
+  
+  <function>
+    <description>通过医院ID查询医院实体 </description>
+    <name>getHospitalById</name>
+    <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+    <function-signature>com.jq.support.model.his.Hospital getHospitalById(java.lang.String)</function-signature>
+    <example>${fnc:getHospitalById(hospitalId)}</example>  
+  </function>  
+  
+    <function>
+    <description>通过医院ID查询医院实体 </description>
+    <name>getHospitalByintId</name>
+    <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+    <function-signature>com.jq.support.model.his.Hospital getHospitalByintId(int)</function-signature>
+    <example>${fnc:getHospitalByintId(hospitalId)}</example>  
+  </function>  
+  
+  <function>
+     <description>通过科室id查询科室</description>
+     <name>getDepartmentById</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>com.jq.support.model.his.Department getDepartmentById(java.lang.String)</function-signature>
+     <example>${fnc:getDepartmentById(departmentId)}</example> 
+  </function>
+    <function>
+     <description>通过医生id查询医生</description>
+     <name>getDoctorById</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>com.jq.support.model.his.Doctor getDoctorById(java.lang.String)</function-signature>
+     <example>${fnc:getDoctorById(doctorId)}</example> 
+  </function>
+      <function>
+     <description>通过医生id查询医生(doctorId为integer)</description>
+     <name>getDoctorByintId</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>com.jq.support.model.his.Doctor getDoctorByintId(java.lang.Integer)</function-signature>
+     <example>${fnc:getDoctorByintId(doctorId)}</example> 
+  </function>
+  <function>
+     <description>通过订单id查询预约信息</description>
+     <name>getRegisterRecordById</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>com.jq.support.model.his.RegisterRecord getRegisterRecordById(java.lang.String)</function-signature>
+     <example>${fnc:getRegisterRecordById(poid)}</example> 
+  </function>
+  <function>
+     <description>通过userid查询user信息</description>
+     <name>getUserById</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>com.jq.support.model.User getUserById(java.lang.String)</function-signature>
+     <example>${fnc:getUserById(userId)}</example> 
+  </function>
+    <function>
+     <description>通过poid查询明细项目信息</description>
+     <name>getOrderItemBypoid</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>com.jq.support.model.ProductOrderItem getOrderItemBypoid(java.lang.String)</function-signature>
+     <example>${fnc:getOrderItemBypoid(poid)}</example> 
+  </function>
+  <function>
+     <description>通过poid查询问诊订单记录信息</description>
+     <name>getInterroById</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>com.jq.support.model.UserInterrogation getInterroById(java.lang.String)</function-signature>
+     <example>${fnc:getInterroById(poid)}</example> 
+  </function>
+  
+    <function>
+     <description>通过订单objectid查询缴费记录信息</description>
+     <name>getHospitalFeelByObjId</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>com.jq.support.model.his.HospitalFee getHospitalFeelByObjId(java.lang.String)</function-signature>
+     <example>${fnc:getHospitalFeelByObjId(objectid)}</example> 
+  </function>
+    <function>
+     <description>通过缴费记录feeid查询缴费记录明细</description>
+     <name>getHospitalFeeItemById</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>com.jq.support.model.his.HospitalFeeItem getHospitalFeeItemById(java.lang.String)</function-signature>
+     <example>${fnc:getHospitalFeeItemById(feeid)}</example> 
+  </function>
+      <function>
+     <description>通过检查报告id查询检查明细</description>
+     <name>getreportItemById</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>com.jq.support.model.his.CheckUserReportItem getreportItemById(int)</function-signature>
+     <example>${fnc:getreportItemById(reportid)}</example> 
+  </function>
+  
+        <function>
+     <description>通过医生ID查询医院</description>
+     <name>getHospitalByDocId</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>com.jq.support.model.his.Hospital getHospitalByDocId(int)</function-signature>
+     <example>${fnc:getHospitalByDocId(docId)}</example> 
+  </function>
+          <function>
+     <description>通过doctortype(id)查询doctortype</description>
+     <name>getDoctorTypeByid</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>com.jq.support.model.his.DoctorType getDoctorTypeByid(java.lang.String)</function-signature>
+     <example>${fnc:getDoctorTypeByid(doctortypeid)}</example> 
+  </function>
+  
+    <function>
+     <description>通过targetsys获取广告位图片url</description>
+     <name>getAdvertisePictures</name>
+     <function-class>com.jq.support.service.utils.IndexUtils</function-class>
+     <function-signature>java.util.List getAdvertisePictures(java.lang.String)</function-signature>
+     <example>${fnc:getAdvertisePictures(targetsys)}</example> 
+  </function>
+</taglib>

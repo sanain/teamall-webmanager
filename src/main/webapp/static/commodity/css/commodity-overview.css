@@ -1,0 +1,75 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+
+.c-context{padding: 10px;background: #E3E4E6;}
+.nav-ul{overflow: hidden;height: 40px;line-height: 40px;background: #ffffff;padding-left: 33px;margin-bottom: 20px;}
+.nav-ul li{float: left;padding-right: 4%}
+.nav-ul li a{display: inline-block;color: #666666;height: 40px}
+.nav-ul li a.active{color: #69AC72;border-bottom: 2px solid #69AC72}
+
+.context-box{overflow: hidden;}
+.overview-left{float: left;width: 41.52%}
+.overview-right{float: left;width: 58.48%;padding-left: 20px}
+.overview-left .mx-prev{background: url("../images/slider-left.png") no-repeat -30px center;height: 60px}
+.overview-left .mx-next{background: url("../images/slider-right.png") no-repeat 10px center;height: 60px}
+.overview-left>img{width: 100%;max-width: inherit}
+.mySlider-num{background: #ffffff;text-align: center;color: #777777;font-size: 12px;height: 35px;line-height: 35px;clear: both}
+.overview-right-box{background: #ffffff;padding: 0 5px;padding-bottom: 50px}
+.right-box1{padding: 22px 0 10px 28px;color: #777777;border-bottom: 1px solid #EEEEEE;}
+.right-box1 b{font-weight: normal;overflow-wrap: break-word; word-wrap: break-word;display: inline-block;width: 80%}
+.right-box1 li{margin-bottom: 12px}
+.right-box1 li span{float: left}
+.right-box2{}
+.right-box2 ul{overflow: hidden;margin-bottom: 0;font-size: 12px}
+.right-box2 ul li{float: left;width: 14.28%;height: 40px;line-height: 40px;text-align: center;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: break-word;}
+.right-box2 ul li:nth-child(1){width:28.56%}
+.list-top li{color: #ffffff;background: #777777;}
+.list-body ul{background: #F9F9F9;color: #777777;border-bottom: 1px solid #ffffff}
+
+
+
+.bianji ul>li:nth-child(1) {
+    width: 85px;
+    text-align: center;
+    line-height: 30px;
+    background: #F7F7F7;
+    border: 1px solid #F2F2F2;
+    border-bottom: none;
+}
+.bianji span {
+    display: inline-block;
+    padding: 0 27px 0 13px;
+    height: 20px;
+    position: relative;
+    background: #F7F7F7;
+    line-height: 20px;
+    border-radius: 38px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.bianji span b {
+    position: absolute;
+    background: url(../images/xxx-rzt.png) no-repeat;
+    top: 5px;
+    right: 9px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.bianji ul:last-child>li {
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.bianji ul>li:nth-child(2) {
+    border-top: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+    width: 70%;
+}
+.bianji li>a {
+    margin-left: 10px;
+}
+

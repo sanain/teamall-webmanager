@@ -1,0 +1,33 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+
+.add-box{height: 500px;overflow-y: auto;padding: 20px}
+.new-div{padding-top: 20px;border-top: 1px solid #eee;}
+.new-div:nth-child(1){border-top: none}
+.new-ul{margin-bottom: 0;}
+.ul-top{overflow: hidden;background: #f7f7f7;padding: 0 20px;margin-bottom: 0;border-radius: 3px;box-shadow: 0 0 7px rgba(0,0,0,0.1);border-top: 3px solid #dcdcdc;}
+.ul-top li{float: left;line-height: 40px;}
+.ul-top li:nth-child(1){width: 30%}
+.ul-top li:nth-child(2){width: 40%}
+.ul-top li:nth-child(3){width: 10%;text-align: center}
+.ul-top li:nth-child(4){width: 10%;text-align: center}
+.ul-top li:nth-child(5){width: 10%;text-align: center}
+.new-div ul input{height: 30px;border:1px solid #eee;padding:0 5px;}
+.new-div ul{overflow: hidden}
+.new-div ul li{float: left;line-height: 30px;min-height:1px}
+.new-div ul li:nth-child(1){width: 30%}
+.new-div ul li:nth-child(2){width: 40%}
+.new-div ul li:nth-child(3){width: 10%;text-align: center}
+.new-div ul li:nth-child(4){width: 10%;text-align: center}
+.new-div ul li:nth-child(5){width: 10%;text-align: center}
+.new-div .ul-list{padding-top: 10px;overflow: hidden}
+.new-div .ul-list li:nth-child(1){padding-left: 30px}
+.new-div .ul-list li:nth-child(2){height: 30px}
+.new-div ul ul{padding:10px 0 0 30px;}
+
+.add-bottom{height: 55px;line-height: 55px;background: #eee	;padding-left: 15px;box-shadow: 0 0 7px rgba(0,0,0,0.1);border:1px solid #dcdcdc;}

@@ -1,0 +1,47 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+
+.order{padding: 20px}
+.crumbs-div{}
+
+.refuse{border: 1px solid #eee;padding: 20px;margin-top: 30px;box-shadow: 0 0 7px rgba(0,0,0,0.1);}
+.refuse>p{color: #333333;font-size: 16px;margin-bottom: 20px;line-height:40px;background:#f0f0f0;padding-left:15px;}
+
+.site-list{border: 1px solid #DCDCDC;margin-top: 10px;order-radius: 3px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    border-top: 3px solid #dcdcdc;}
+.site-list ul{overflow: hidden;margin-bottom: 0;height: 30px;line-height: 30px;border-bottom: 1px solid #DCDCDC}
+.site-list ul:last-child{border-bottom: none}
+.site-list ul:nth-child(even){background:#f9f9f9}
+.site-list ul li{float: left;text-align: center}
+.site-list ul li:nth-child(1){width:40%; text-align: left;padding-left:10px}
+.site-list ul li:nth-child(2){width:20% }
+.site-list ul li:nth-child(3){width:20% }
+.site-list ul li:nth-child(4){width:20% }
+
+.list-top{background: #f0f0f0;}
+.list-body li{border-right: 1px solid #eeeeee}
+.list-body li:nth-child(1){padding-left: 35px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: break-word;}
+.list-body.active li:last-child{background: url("../images/gou.png") no-repeat right center;}
+.list-body a{color: #337ab7}
+.list-body b{font-weight: normal}
+
+/*同意*/
+.consent{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);z-index: 100}
+.consent-box{width: 340px;height: 140px;background: #ffffff;position: absolute;top: 50%;left: 50%;margin-top: -70px;margin-left: -170px;overflow: hidden}
+.consent-box>p{height: 35px;line-height: 35px;background: #f0f0f0;text-align: center;position: relative}
+.consent-box>p img{position: absolute;right: 15px;top: 12px;cursor: pointer}
+.consent-div{padding: 0 20px;text-align: center}
+.consent-div textarea{outline: none;border: 1px solid #DCDCDC;width: 100%;height:100px;border-radius: 3px;resize: none;padding: 5px}
+.consent-div a{display: inline-block;height: 30px;line-height: 30px;color: #ffffff;border-radius: 5px;background: #78A7FF;width: 80px}
+.consent-div a:nth-child(3){margin-right: 10px}
+.consent-div a:nth-child(4){background: #ffffff;color: #666666;border: 1px solid #DCDCDC;margin-left: 10px}
+.consent-div span{margin-bottom: 20px;display: inline-block}
+.new-site{float:right;}
+.refuse-dd{overflow: hidden}
+.refuse-btn{text-align: center;margin-top: 30px}

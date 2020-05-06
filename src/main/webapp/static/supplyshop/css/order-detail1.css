@@ -1,0 +1,94 @@
+*{padding: 0;margin: 0;list-style-type: none;text-decoration: none;font-family:"Microsoft YaHei",Helvetica,Hiragino Sans GB,Tahoma,Geneva,\5FAE\8F6F\96C5\9ED1,simhei,Arial, sans-serif;}
+a{color: #000;text-decoration: none !important;}
+
+h1{font-weight: normal;}
+img{border: none;max-width: 100%;}
+html, body {position: relative;color: #666666;}
+input:focus{outline:none; }
+
+.order{padding: 20px}
+.crumbs-div{line-height: 30px;background: #f7f7f7;padding-left: 10px;}
+
+.order-state{padding: 20px;border: 1px solid #eee;box-shadow: 0 0 7px rgba(0,0,0,0.1)}
+.order-state>p{font-size: 16px;margin-bottom:0;}
+.order-state span{color: #666666;cursor: pointer;margin-left:10px;}
+.order-state .shi{color: #FF6600}
+
+.pic-five{overflow: hidden;text-align: center;margin: 50px auto;box-shadow: 0 0 7px rgba(0,0,0,0.1);padding:10px}
+.pic-five .active{color: #4778C7}
+.pic-five>div{float: left}
+.tijiao-div{width: 55px;height: 55px;background: url("../images/z-tijiao1.png") no-repeat;margin: 0 auto}
+.active .tijiao-div{background: url("../images/z-tijiao2.png") no-repeat;}
+.fukuan-div{width: 55px;height: 55px;background: url("../images/z-fukuan1.png") no-repeat;margin: 0 auto}
+.active .fukuan-div{background: url("../images/z-fukuan2.png") no-repeat;}
+.fahuo-div{width: 55px;height: 55px;background: url("../images/z-fahuo1.png") no-repeat;margin: 0 auto}
+.active .fahuo-div{background: url("../images/z-fahuo2.png") no-repeat;}
+.shouhuo-div{width: 55px;height: 55px;background: url("../images/z-shouhuo1.png") no-repeat;margin: 0 auto}
+.active .shouhuo-div{background: url("../images/z-shouhuo2.png") no-repeat;}
+.wancheng-div{width: 55px;height: 55px;background: url("../images/z-wancheng1.png") no-repeat;margin: 0 auto}
+.active .wancheng-div{background: url("../images/z-wancheng2.png") no-repeat;}
+.xian{width: 40px;height: 27px;text-algin:center;}
+/* .xian.active1{background: url("../images/z-xian2.png") no-repeat;}
+.xian.active2{background: url("../images/z-xian3.png") no-repeat;} */
+.guanbi-div{width: 55px;height: 55px;background: url("../images/z-guanbi1.png") no-repeat;margin: 0 auto}
+.active .guanbi-div{background: url("../images/z-guanbi2.png") no-repeat;}
+
+
+
+.order-tail{overflow: hidden;margin-top: 20px;border-radius: 3px;box-shadow: 0 0 7px rgba(0,0,0,0.1);border-top: 3px solid #dcdcdc;}
+.order-tail>p{height: 35px;line-height: 35px;font-size: 16px;background: #f7f7f7;padding-left: 20px;margin:0}
+.order-tail ul{color: #666666;overflow:hidden;border:1px solid #eee;margin-bottom:0;border-bottom:none}
+.order-tail ul:last-child{border-bottom:1px solid #eee;}
+.order-tail ul:nth-child(1){color: #333333;margin-bottom: 10px}
+.order-tail ul li{float:left;width:50%;height:30px;line-height:30px;padding-left: 20px;}
+.order-msg ul li span:nth-child(1){display:inline-block;width:100px;text-align:right;}
+.order-tail ul li:nth-child(1){border-right:1px solid #eee}
+
+.order-msg{margin-top: 20px;border-radius: 3px;border-top: 3px solid #dcdcdc;}
+.order-msg>p{height: 35px;line-height: 35px;font-size: 16px;background: #f7f7f7;padding-left: 20px}
+.order-msg ul{color: #666666;border: 1px solid #eee;margin: 0;box-shadow: 0 0 7px rgba(0,0,0,0.1)}
+.order-msg ul:last-child{border-bottom: none}
+.order-msg ul li{line-height: 30px;border-bottom:1px solid #eee;padding-left:10px;}
+.order-msg ul li:nth-child(1){color: #333333;background:#f7f7f7}
+.look-a{display: inline-block;height: 30px;line-height: 30px;width: 90px;text-align: center;color: #ffffff;background: #78A7FF;border-radius: 5px;margin-left: 5px}
+
+.shop-msg{margin-top: 20px;border-radius: 3px;border-top: 3px solid #dcdcdc;}
+.shop-msg>p{height: 35px;line-height: 35px;font-size: 16px;background: #f7f7f7;padding-left: 20px}
+.list-div{margin: 0;border-radius: 3px;box-shadow: 0 0 7px rgba(0,0,0,0.1);border-top: 3px solid #dcdcdc;}
+.shop-msg ul{overflow: hidden;text-align: center;margin-bottom: 0;border-bottom: 1px solid #eee}
+.list-div ul:last-child{border-bottom: none}
+.shop-msg ul li{float: left}
+.shop-msg ul li:nth-child(1){width:8% }
+.shop-msg ul li:nth-child(2){width:15% }
+.shop-msg ul li:nth-child(3){width:38% }
+.shop-msg ul li:nth-child(4){width:13% }
+.shop-msg ul li:nth-child(5){width:13% }
+.shop-msg ul li:nth-child(6){width:13% }
+.list-top{height: 30px;line-height: 30px;background: #f7f7f7}
+.img-box{width: 80px;height: 70px;overflow: hidden;border: 1px solid #eee;margin:10px auto 0;}
+.list-body li{border-left: 1px solid #eee;line-height: 90px;height: 90px}
+.list-body li:first-child{border-left: none}
+.list-body li:nth-child(4){color: #e86515}
+
+.shut{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);z-index: 100}
+.shut-box{width: 450px;height: 275px;padding: 20px;background: #ffffff;position: absolute;top: 50%;left: 50%;margin-top: -137px;margin-left: -200px}
+.shut-box>p{text-align: center;height: 30px;line-height: 30px;margin:10px 0 0 0;color:#999;font-size:75px;}
+.shut-box select{width: 160px;height: 30px;border: 1px solid #eee;border-radius: 3px;padding-left: 10px;outline: none}
+.shut-sel{padding-left: 15px}
+.shut-btn{text-align: center;margin-top: 20px}
+.shut-btn a{display: inline-block;height: 30px;width: 80px;background: #4778C7;color: #ffffff;border-radius: 5px;line-height: 30px}
+.shut-btn a:nth-child(1){margin-right: 10px}
+.shut-btn a:nth-child(2){margin-left: 10px}
+.shut ul{padding-left: 15px;margin-top: 20px}
+.shut ul li:nth-child(1){color: #666}
+.shut ul li:nth-child(2){color: #999}
+
+.look{display:none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);z-index: 100}
+.look-box{width: 550px;height: 310px;background: #ffffff;position: absolute;top: 50%;left: 50%;margin-top: -155px;margin-left: -225px;overflow: hidden}
+.look-box>p{height: 35px;line-height: 35px;background: #f0f0f0;text-align: center;position: relative}
+.look-box>p img{position: absolute;right: 15px;top: 12px;cursor: pointer}
+.look-msg{height: 235px;overflow-y: auto}
+.look-box ul{overflow: hidden}
+.look-box ul li{float: left;width: 50%;text-align: center}
+.look-msg ul li:nth-child(2){text-align: left}
+
